@@ -1656,7 +1656,7 @@ public class AdvancedItemListAdapter extends RecyclerView.Adapter<AdvancedItemLi
         final ProgressBar mProgressBar = (ProgressBar) dialog.findViewById(R.id.progress_bar);
         mProgressBar.setVisibility(View.GONE);
 
-        final TextView mMessageLabel = (TextView) dialog.findViewById(R.id.message_label);
+        final LinearLayout mMessageLabel = (LinearLayout) dialog.findViewById(R.id.message_label);
         mMessageLabel.setVisibility(View.GONE);
 
         final NestedScrollView mDlgNestedView = (NestedScrollView) dialog.findViewById(R.id.nested_view);

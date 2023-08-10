@@ -102,7 +102,7 @@
     <string name="post">Post</string>
     <string name="add">Add</string>
     <string name="linkCopied">Link copied</string>
-    <string name="addYourComment">Add your comment...</string>
+    <string name="addYourComment">Add your reply...</string>
     <string name="enter_a_few_words_to_search">Enter a few words to search for on\nthe social.</string>
     <string name="searchHere">Search here...</string>
     <string name="searchFilter">Search Filter</string>
@@ -150,6 +150,7 @@
     <string name="action_retry">Retry</string>
     <string name="action_turn_on">Turn on</string>
     <string name="edit_Profile">Edit Profile</string>
+    <string name="done">Done</string>
     <string name="new_community">New Community</string>
     <string name="Notifications">Activity</string>
     <string name="action_turn_off">Turn off</string>
@@ -628,7 +629,7 @@
     <string name="label_profile_info_only_for_friends">Profile information is available only for friends.</string>
     <string name="action_gift">Gift</string>
     <string name="action_message">Message</string>
-    <string name="action_new_item">New post</string>
+    <string name="action_new_item">Share profile</string>
     <string name="action_repost">Repost</string>
     <string name="label_sponsored">Sponsored</string>
     <string name="label_just_now">just now</string>
@@ -659,8 +660,8 @@
     <string name="action_accept">Accept</string>
     <string name="action_reject">Reject</string>
     <string name="action_pending">Pending&#8230;</string>
-    <string name="action_add_to_friends">Add to friends</string>
-    <string name="action_remove_from_friends">Remove from friends</string>
+    <string name="action_add_to_friends">Follow</string>
+    <string name="action_remove_from_friends">Unfollow</string>
 
     <string name="title_activity_privacy_settings">Privacy</string>
     <string name="settings_privacy">Privacy</string>
@@ -897,7 +898,7 @@
     <string name="msg_new_item_promo_2">Create a new post right now! Share your thoughts, impressions and photos!</string>
     <string name="msg_search_friends_promo">%s, look who is near you! Find your friends right now!</string>
 
-    <string name="label_feed_desc">News from your friends and communities.</string>
+    <string name="label_feed_desc">News from your followers and communities.</string>
     <string name="noFriendsYet">No Friends yet</string>
 
 
@@ -955,7 +956,7 @@
     <string name="video_limit_of">You have reached the limit. No more than %d video files per post.</string>
     <string name="account_balance_label">%d credits</string>
 
-    <string name="label_empty_comments_list">No comments yet.</string>
+    <string name="label_empty_comments_list">No replies yet.</string>
 
     <string name="label_profile_photo_rejected_new">%s rejected you profile photo. Upload/change profile photo.</string>
     <string name="label_profile_cover_rejected_new">%s rejected you profile cover. Upload/change profile cover.</string>

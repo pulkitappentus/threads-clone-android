@@ -33,6 +33,8 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -58,6 +60,7 @@ import com.android.volley.RetryPolicy;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.ImageLoader;
 import com.balysv.materialripple.MaterialRippleLayout;
+import com.bumptech.glide.Glide;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.snackbar.Snackbar;
@@ -103,6 +106,8 @@ public class ProfileFragment extends Fragment implements Constants, SwipeRefresh
 
     private ProgressDialog pDialog;
 
+    int reason=10;
+
     private static final String TAG = ProfileFragment.class.getSimpleName();
     private static final int MODE_PHOTO = 1;
     private static final int MODE_COVER = 2;
@@ -117,16 +122,20 @@ public class ProfileFragment extends Fragment implements Constants, SwipeRefresh
 
     String[] names = {};
 
-    LinearLayout mProfileActionSendMessage, mProfileActionMore;
+    //LinearLayout mProfileActionSendMessage, mProfileActionMore;
     ConstraintLayout clMainAdd,clEditProfile;
 
-    Button  mGallerySpotlightMoreButton;
+    //Button  mGallerySpotlightMoreButton;
     //mFriendsSpotlightMoreButton,
-    TextView  mGallerySpotlightTitle, mFriendsSpotlightCount, mGallerySpotlightCount, profile_action_main;
+    TextView mFriendsSpotlightCount, profile_action_main;
+    //mGallerySpotlightCount
+    //mGallerySpotlightTitle
     //mFriendsSpotlightTitle,
-    CardView mFriendsSpotlight, mGallerySpotlight;
-    RecyclerView mFriendsSpotlightRecyclerView, mGallerySpotlightRecyclerView;
-    ImageView ivUser;
+    CardView mFriendsSpotlight;
+    //mGallerySpotlight;
+    RecyclerView mFriendsSpotlightRecyclerView;
+    //mGallerySpotlightRecyclerView;
+    //ImageView ivUser;
 
     private ArrayList<GalleryItem> gallerySpotlightList;
     private GallerySpotlightListAdapter gallerySpotlightAdapter;
@@ -138,10 +147,16 @@ public class ProfileFragment extends Fragment implements Constants, SwipeRefresh
     //mProfileFacebookContainer
 
     //mProfileStatusContainer,mProfileActiveContainer
-    ImageView profileOnlineIcon, profileIcon;
+    ImageView profileIcon;
+    //profileOnlineIcon
 
     TextView profileFullname, profileUsername, mProfileWallMsg, mProfileErrorScreenMsg, mProfileDisabledScreenMsg;
-    TextView mItemsCount, mGiftsCount, mProfileLocation, mProfileFacebookPage, mProfileInstagramPage, mProfileBio;
+    TextView mProfileBio;
+    //mProfileInstagramPage
+    //mProfileFacebookPage
+    //mProfileLocation
+    //mGiftsCount
+    //mItemsCount
 
     //mProfileActive
     RelativeLayout mProfileLoadingScreen, mProfileErrorScreen, mProfileDisabledScreen;
@@ -152,7 +167,9 @@ public class ProfileFragment extends Fragment implements Constants, SwipeRefresh
     NestedScrollView mNestedScrollView;
     RecyclerView mRecyclerView;
 
-    ImageView profileCover, ivSendMessage, ivMore,ivBack,icBuyGift,icSetting;
+    ImageView profileCover,ivBack,icBuyGift,icSetting;
+    //ivMore
+    //ivSendMessage
     CircularImageView profilePhoto, mFeelingIcon;
 
 
@@ -162,7 +179,7 @@ public class ProfileFragment extends Fragment implements Constants, SwipeRefresh
   //  private RelativeLayout mSetProfileCoverButton;
     CircularImageView ciSetProfileImage;
 
-    MaterialRippleLayout mProfileItemsBtn, mProfileGiftsBtn;
+    //MaterialRippleLayout mProfileItemsBtn, mProfileGiftsBtn;
     Profile profile;
 
     private ArrayList<Item> itemsList;
@@ -303,9 +320,9 @@ public class ProfileFragment extends Fragment implements Constants, SwipeRefresh
         mProfileErrorScreenMsg = (TextView) rootView.findViewById(R.id.profileErrorScreenMsg);
         mProfileDisabledScreenMsg = (TextView) rootView.findViewById(R.id.profileDisabledScreenMsg);
         profile_action_main = (TextView) rootView.findViewById(R.id.profile_action_main);
-        ivSendMessage = (ImageView) rootView.findViewById(R.id.ivSendMessage);
-        ivMore = (ImageView) rootView.findViewById(R.id.ivMore);
-        ivUser = (ImageView) rootView.findViewById(R.id.ivUser);
+        //ivSendMessage = (ImageView) rootView.findViewById(R.id.ivSendMessage);
+        //ivMore = (ImageView) rootView.findViewById(R.id.ivMore);
+        //ivUser = (ImageView) rootView.findViewById(R.id.ivUser);
         ivBack = (ImageView) rootView.findViewById(R.id.ivBack);
         icBuyGift = (ImageView) rootView.findViewById(R.id.icBuyGift);
         icSetting = (ImageView) rootView.findViewById(R.id.icSetting);
@@ -373,15 +390,15 @@ public class ProfileFragment extends Fragment implements Constants, SwipeRefresh
 
         clMainAdd = (ConstraintLayout) rootView.findViewById(R.id.clMainAdd);
         clEditProfile = (ConstraintLayout) rootView.findViewById(R.id.clEditProfile);
-        mProfileActionSendMessage = (LinearLayout) rootView.findViewById(R.id.profile_action_send_message);
-        mProfileActionMore = (LinearLayout) rootView.findViewById(R.id.profile_action_more);
+        //mProfileActionSendMessage = (LinearLayout) rootView.findViewById(R.id.profile_action_send_message);
+        //mProfileActionMore = (LinearLayout) rootView.findViewById(R.id.profile_action_more);
 
         clMainAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (profile.getId() == App.getInstance().getId()) {
-                    Intent intent = new Intent(getActivity(), NewItemActivity.class);
-                    startActivityForResult(intent, PROFILE_NEW_POST);
+                    //Intent intent = new Intent(getActivity(), NewItemActivity.class);
+                    //startActivityForResult(intent, PROFILE_NEW_POST);
 
                 }
                 else {
@@ -395,29 +412,31 @@ public class ProfileFragment extends Fragment implements Constants, SwipeRefresh
             }
         });
 
-        mProfileActionSendMessage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getActivity(), ChatActivity.class);
-                i.putExtra("chatId", 0);
-                i.putExtra("profileId", profile.getId());
-                i.putExtra("withProfile", profile.getFullname());
-
-                i.putExtra("with_user_username", profile.getUsername());
-                i.putExtra("with_user_fullname", profile.getFullname());
-                i.putExtra("with_user_photo_url", profile.getNormalPhotoUrl());
-
-                i.putExtra("with_user_state", profile.getState());
-                i.putExtra("with_user_verified", profile.getVerify());
-
-                startActivityForResult(i, PROFILE_EDIT);
-            }
-        });
+//        mProfileActionSendMessage.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent i = new Intent(getActivity(), ChatActivity.class);
+//                i.putExtra("chatId", 0);
+//                i.putExtra("profileId", profile.getId());
+//                i.putExtra("withProfile", profile.getFullname());
+//
+//                i.putExtra("with_user_username", profile.getUsername());
+//                i.putExtra("with_user_fullname", profile.getFullname());
+//                i.putExtra("with_user_photo_url", profile.getNormalPhotoUrl());
+//
+//                i.putExtra("with_user_state", profile.getState());
+//                i.putExtra("with_user_verified", profile.getVerify());
+//
+//                startActivityForResult(i, PROFILE_EDIT);
+//            }
+//        });
 
         icBuyGift.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                choiceGiftDialog();
+                //choiceGiftDialog();
+                //fghj
+                showMoreDialog();
             }
         });
 
@@ -430,12 +449,12 @@ public class ProfileFragment extends Fragment implements Constants, SwipeRefresh
         });
 
 
-        mProfileActionMore.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                showMoreDialog();
-            }
-        });
+//        mProfileActionMore.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                showMoreDialog();
+//            }
+//        });
 
         clEditProfile.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -481,16 +500,16 @@ public class ProfileFragment extends Fragment implements Constants, SwipeRefresh
 
         // Start prepare Gallery Spotlight
 
-        mGallerySpotlightTitle = (TextView) rootView.findViewById(R.id.gallerySpotlightTitle);
-        mGallerySpotlightCount = (TextView) rootView.findViewById(R.id.gallerySpotlightCount);
-        mGallerySpotlightMoreButton = (Button) rootView.findViewById(R.id.gallerySpotlightMoreBtn);
-        mGallerySpotlight = (CardView) rootView.findViewById(R.id.gallerySpotlight);
-        mGallerySpotlightRecyclerView = (RecyclerView) rootView.findViewById(R.id.gallerySpotlightRecyclerView);
-
-        mGallerySpotlight.setVisibility(View.GONE);
-
-        mGallerySpotlightRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false));
-        mGallerySpotlightRecyclerView.setAdapter(gallerySpotlightAdapter);
+//        mGallerySpotlightTitle = (TextView) rootView.findViewById(R.id.gallerySpotlightTitle);
+//        mGallerySpotlightCount = (TextView) rootView.findViewById(R.id.gallerySpotlightCount);
+//        mGallerySpotlightMoreButton = (Button) rootView.findViewById(R.id.gallerySpotlightMoreBtn);
+//        mGallerySpotlight = (CardView) rootView.findViewById(R.id.gallerySpotlight);
+//        mGallerySpotlightRecyclerView = (RecyclerView) rootView.findViewById(R.id.gallerySpotlightRecyclerView);
+//
+//        mGallerySpotlight.setVisibility(View.GONE);
+//
+//        mGallerySpotlightRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false));
+//        mGallerySpotlightRecyclerView.setAdapter(gallerySpotlightAdapter);
 
         gallerySpotlightAdapter.setOnItemClickListener(new GallerySpotlightListAdapter.OnItemClickListener() {
 
@@ -567,17 +586,17 @@ public class ProfileFragment extends Fragment implements Constants, SwipeRefresh
         profileFullname = (TextView) rootView.findViewById(R.id.profileFullname);
         profileUsername = (TextView) rootView.findViewById(R.id.profileUsername);
 
-        mItemsCount = (TextView) rootView.findViewById(R.id.profileItemsCount);
-        mGiftsCount = (TextView) rootView.findViewById(R.id.profileGiftsCount);
+        //mItemsCount = (TextView) rootView.findViewById(R.id.profileItemsCount);
+        //mGiftsCount = (TextView) rootView.findViewById(R.id.profileGiftsCount);
 
-        mProfileItemsBtn = (MaterialRippleLayout) rootView.findViewById(R.id.profileItemsBtn);
-        mProfileGiftsBtn = (MaterialRippleLayout) rootView.findViewById(R.id.profileGiftsBtn);
+       // mProfileItemsBtn = (MaterialRippleLayout) rootView.findViewById(R.id.profileItemsBtn);
+       // mProfileGiftsBtn = (MaterialRippleLayout) rootView.findViewById(R.id.profileGiftsBtn);
 
 
        // mProfileInfoContainer = (LinearLayout) rootView.findViewById(R.id.profileInfoContainer);
 
         //mProfileLocationContainer = (LinearLayout) rootView.findViewById(R.id.profileLocationContainer);
-        profileOnlineIcon = (ImageView) rootView.findViewById(R.id.profileOnlineIcon);
+        //profileOnlineIcon = (ImageView) rootView.findViewById(R.id.profileOnlineIcon);
         profileIcon = (ImageView) rootView.findViewById(R.id.profileIcon);
 
         //mProfileStatusContainer = (LinearLayout) rootView.findViewById(R.id.profileStatusContainer);
@@ -586,48 +605,48 @@ public class ProfileFragment extends Fragment implements Constants, SwipeRefresh
         //mProfileSiteContainer = (LinearLayout) rootView.findViewById(R.id.profileSiteContainer);
 
         //mProfileActive = (TextView) rootView.findViewById(R.id.profileActive);
-        mProfileLocation = (TextView) rootView.findViewById(R.id.profileLocation);
-        mProfileFacebookPage = (TextView) rootView.findViewById(R.id.profileFacebookUrl);
-        mProfileInstagramPage = (TextView) rootView.findViewById(R.id.profileSiteUrl);
+        //mProfileLocation = (TextView) rootView.findViewById(R.id.profileLocation);
+        //mProfileFacebookPage = (TextView) rootView.findViewById(R.id.profileFacebookUrl);
+        //mProfileInstagramPage = (TextView) rootView.findViewById(R.id.profileSiteUrl);
         mProfileBio = (TextView) rootView.findViewById(R.id.profileStatus);
 
-        mGallerySpotlightMoreButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+//        mGallerySpotlightMoreButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                showProfileGallery(profile.getId());
+//            }
+//        });
 
-                showProfileGallery(profile.getId());
-            }
-        });
+//        mProfileFacebookPage.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                if (!profile.getFacebookPage().startsWith("https://") && !profile.getFacebookPage().startsWith("http://")) {
+//
+//                    profile.setFacebookPage("http://" + profile.getFacebookPage());
+//                }
+//
+//                Intent i = new Intent(Intent.ACTION_VIEW);
+//                i.setData(Uri.parse(profile.getFacebookPage()));
+//                startActivity(i);
+//            }
+//        });
 
-        mProfileFacebookPage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                if (!profile.getFacebookPage().startsWith("https://") && !profile.getFacebookPage().startsWith("http://")) {
-
-                    profile.setFacebookPage("http://" + profile.getFacebookPage());
-                }
-
-                Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse(profile.getFacebookPage()));
-                startActivity(i);
-            }
-        });
-
-        mProfileInstagramPage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                if (!profile.getInstagramPage().startsWith("https://") && !profile.getInstagramPage().startsWith("http://")) {
-
-                    profile.setInstagramPage("http://" + profile.getInstagramPage());
-                }
-
-                Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse(profile.getInstagramPage()));
-                startActivity(i);
-            }
-        });
+//        mProfileInstagramPage.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                if (!profile.getInstagramPage().startsWith("https://") && !profile.getInstagramPage().startsWith("http://")) {
+//
+//                    profile.setInstagramPage("http://" + profile.getInstagramPage());
+//                }
+//
+//                Intent i = new Intent(Intent.ACTION_VIEW);
+//                i.setData(Uri.parse(profile.getInstagramPage()));
+//                startActivity(i);
+//            }
+//        });
 
 //        mFriendsSpotlightMoreButton.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -636,12 +655,12 @@ public class ProfileFragment extends Fragment implements Constants, SwipeRefresh
 //            }
 //        });
 
-        mProfileGiftsBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showProfileGifts(profile.getId());
-            }
-        });
+//        mProfileGiftsBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                showProfileGifts(profile.getId());
+//            }
+//        });
 
         mProfileWallMsg = (TextView) rootView.findViewById(R.id.profileMessage);
 
@@ -1023,19 +1042,19 @@ public class ProfileFragment extends Fragment implements Constants, SwipeRefresh
         if (profile.getLastActive() == 0) {
 
             //mProfileActive.setText(getString(R.string.label_offline));
-            profileOnlineIcon.setVisibility(View.GONE);
+            //profileOnlineIcon.setVisibility(View.GONE);
 
         } else {
 
             if (profile.isOnline()) {
 
                 //mProfileActive.setText(getString(R.string.label_online));
-                profileOnlineIcon.setVisibility(View.VISIBLE);
+                //profileOnlineIcon.setVisibility(View.VISIBLE);
 
             } else {
 
                 //mProfileActive.setText(profile.getLastActiveTimeAgo());
-                profileOnlineIcon.setVisibility(View.GONE);
+                //profileOnlineIcon.setVisibility(View.GONE);
             }
         }
 
@@ -1054,9 +1073,9 @@ public class ProfileFragment extends Fragment implements Constants, SwipeRefresh
             }
         }
         profileUsername.setText("@" + profile.getUsername());
-        mProfileLocation.setText(profile.getLocation());
-        mProfileFacebookPage.setText(profile.getFacebookPage());
-        mProfileInstagramPage.setText(profile.getInstagramPage());
+//        mProfileLocation.setText(profile.getLocation());
+//        mProfileFacebookPage.setText(profile.getFacebookPage());
+//        mProfileInstagramPage.setText(profile.getInstagramPage());
         mProfileBio.setText(profile.getBio());
 
         // update action buttons is your profile
@@ -1069,7 +1088,7 @@ public class ProfileFragment extends Fragment implements Constants, SwipeRefresh
             //mSetProfileCoverButton.setVisibility(View.VISIBLE);
             //mSetProfileCoverButton.setVisibility(View.VISIBLE);
             clEditProfile.setVisibility(View.VISIBLE);
-            mProfileActionMore.setVisibility(View.GONE);
+         //   mProfileActionMore.setVisibility(View.GONE);
 
         } else {
             ivBack.setVisibility(View.VISIBLE);
@@ -1077,15 +1096,15 @@ public class ProfileFragment extends Fragment implements Constants, SwipeRefresh
             icSetting.setVisibility(View.GONE);
             ciSetProfileImage.setVisibility(View.GONE);
            // mSetProfileCoverButton.setVisibility(View.GONE);
-            mProfileActionSendMessage.setVisibility(View.GONE);
+            //mProfileActionSendMessage.setVisibility(View.GONE);
 
          //   mProfileActionSendMessage.setVisibility(View.VISIBLE);
             clEditProfile.setVisibility(View.GONE);
-            mProfileActionMore.setVisibility(View.VISIBLE);
+            //mProfileActionMore.setVisibility(View.VISIBLE);
 
             if (!profile.isInBlackList()) {
                 if ((profile.getAllowMessages() == 1) || (profile.getAllowMessages() == 0 && profile.isFriend())) {
-                    mProfileActionSendMessage.setVisibility(View.VISIBLE);
+                    //mProfileActionSendMessage.setVisibility(View.VISIBLE);
                 }
             }
         }
@@ -1178,21 +1197,21 @@ public class ProfileFragment extends Fragment implements Constants, SwipeRefresh
     }
 
     private void updatePhotosCount() {
-        mGallerySpotlight.setVisibility(View.GONE);
+        //mGallerySpotlight.setVisibility(View.GONE);
 
         if (profile.getGalleryItemsCount() != 0 && gallerySpotlightAdapter.getItemCount() != 0) {
 
             if (profile.getAllowShowMyGallery() == 0 || App.getInstance().getId() == profile.getId() || profile.isFriend()) {
 
-                mGallerySpotlight.setVisibility(View.VISIBLE);
-                mGallerySpotlightCount.setText(profile.getGalleryItemsCount() + " " + getString(R.string.label_photos));
+              //  mGallerySpotlight.setVisibility(View.VISIBLE);
+              //  mGallerySpotlightCount.setText(profile.getGalleryItemsCount() + " " + getString(R.string.label_photos));
             }
         }
     }
 
     private void updateGiftsCount() {
 
-        mGiftsCount.setText(Integer.toString(profile.getGiftsCount()));
+        // mGiftsCount.setText(Integer.toString(profile.getGiftsCount()));
     }
 
     private void updateItemsCount() {
@@ -1215,18 +1234,22 @@ public class ProfileFragment extends Fragment implements Constants, SwipeRefresh
             mProfileWallMsg.setVisibility(View.GONE);
         }
 
-        mItemsCount.setText(Integer.toString(profile.getItemsCount()));
+        //mItemsCount.setText(Integer.toString(profile.getItemsCount()));
     }
 
     public void updateProfileActionMainButton() {
 
         if (profile.getId() == App.getInstance().getId()) {
             profile_action_main.setText(R.string.action_new_item);
-            ivUser.setImageResource(R.drawable.ic_new_post);
+            clMainAdd.setBackgroundDrawable(getResources().getDrawable(R.drawable.bg_back_btn));
+            profile_action_main.setTextColor(this.getResources().getColor(R.color.black));
+            //ivUser.setImageResource(R.drawable.ic_new_post);
 
         } else {
             if (profile.isFriend()) {
                 profile_action_main.setText(R.string.action_remove_from_friends);
+                clMainAdd.setBackgroundDrawable(getResources().getDrawable(R.drawable.bg_back_btn));
+                profile_action_main.setTextColor(this.getResources().getColor(R.color.black));
                 //mAddFriendIcon.setImageResource(R.drawable.ic_friend_delete);
 
             } else {
@@ -1234,11 +1257,15 @@ public class ProfileFragment extends Fragment implements Constants, SwipeRefresh
                 if (profile.isFollow()) {
 
                     profile_action_main.setText(R.string.action_cancel_friends_request);
+                    clMainAdd.setBackgroundDrawable(getResources().getDrawable(R.drawable.bg_back_btn));
+                    profile_action_main.setTextColor(this.getResources().getColor(R.color.black));
                     // mAddFriendIcon.setImageResource(R.drawable.ic_friend_cancel);
 
                 } else {
 
                     profile_action_main.setText(R.string.action_add_to_friends);
+                    clMainAdd.setBackgroundDrawable(getResources().getDrawable(R.drawable.bg_back_black));
+                    profile_action_main.setTextColor(this.getResources().getColor(R.color.white));
                     //mAddFriendIcon.setImageResource(R.drawable.ic_friend_add);
                 }
             }
@@ -2189,6 +2216,228 @@ public class ProfileFragment extends Fragment implements Constants, SwipeRefresh
         alertDialog.show();
     }
 
+    public void report() {
+        final View view = getLayoutInflater().inflate(R.layout.dialog_reports, null);
+        BottomSheetDialog  mBottomSheetDialog = new BottomSheetDialog(getActivity(), R.style.AppBottomSheetDialogTheme);
+        mBottomSheetDialog.setContentView(view);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            mBottomSheetDialog.getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        }
+
+
+        doKeepDialog(mBottomSheetDialog);
+        TextView cancel=mBottomSheetDialog.findViewById(R.id.tvCancel);
+        TextView report=mBottomSheetDialog.findViewById(R.id.tvYes);
+        RadioGroup radioGroup=mBottomSheetDialog.findViewById(R.id.radioGroup);
+        RadioButton radio1=mBottomSheetDialog.findViewById(R.id.rbSpam);
+        RadioButton radio2=mBottomSheetDialog.findViewById(R.id.rbHateSpeech);
+        RadioButton radio3=mBottomSheetDialog.findViewById(R.id.rbNudity);
+        RadioButton radio4=mBottomSheetDialog.findViewById(R.id.rbFakeProfile);
+
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            public void onCheckedChanged(RadioGroup group, int checkedId)
+            {
+                if(radio1.isChecked()){
+                    reason=0;
+                }else  if(radio2.isChecked()){
+                    reason=1;
+                }else if(radio3.isChecked()){
+                    reason=2;
+                }else{
+                    reason=3;
+                }
+            }
+        });
+
+
+        cancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mBottomSheetDialog.cancel();
+            }
+        });
+
+        report.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Api api = new Api(getActivity());
+                api.newReport(profile.getId(), REPORT_TYPE_PROFILE, reason);
+                Toast.makeText(getActivity(), getActivity().getString(R.string.label_post_reported), Toast.LENGTH_SHORT).show();
+                mBottomSheetDialog.cancel();
+
+                Toast.makeText(getActivity(), getText(R.string.label_profile_reported), Toast.LENGTH_SHORT).show();
+            }
+        });
+        mBottomSheetDialog.show();
+
+    }
+
+    public void blockUser() {
+        final View view = getLayoutInflater().inflate(R.layout.dialog_block, null);
+        BottomSheetDialog  mBottomSheetDialog = new BottomSheetDialog(getActivity(), R.style.AppBottomSheetDialogTheme);
+        mBottomSheetDialog.setContentView(view);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            mBottomSheetDialog.getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        }
+
+
+        doKeepDialog(mBottomSheetDialog);
+        CircularImageView userProfile=mBottomSheetDialog.findViewById(R.id.userProfile);
+        TextView tvUserName=mBottomSheetDialog.findViewById(R.id.tvReportPost);
+        TextView block=mBottomSheetDialog.findViewById(R.id.tvYes);
+
+        tvUserName.setText(profile.getUsername());
+
+        ImageLoader imageLoader = App.getInstance().getImageLoader();
+
+        imageLoader.get(profile.getLowPhotoUrl(), ImageLoader.getImageListener(userProfile, R.drawable.profile_default_photo, R.drawable.profile_default_photo));
+
+        block.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                if (!profile.isBlocked()) {
+                    loading = true;
+
+                    showpDialog();
+
+                    CustomRequest jsonReq = new CustomRequest(Request.Method.POST, METHOD_BLACKLIST_ADD, null,
+                            new Response.Listener<JSONObject>() {
+                                @Override
+                                public void onResponse(JSONObject response) {
+
+                                    if (!isAdded() || getActivity() == null) {
+
+                                        Log.e("ERROR", "ProfileFragment Not Added to Activity");
+
+                                        return;
+                                    }
+
+                                    try {
+
+                                        if (!response.getBoolean("error")) {
+
+                                            profile.setBlocked(true);
+
+                                            Toast.makeText(getActivity(), getString(R.string.msg_profile_added_to_blacklist), Toast.LENGTH_SHORT).show();
+                                        }
+
+                                    } catch (JSONException e) {
+
+                                        e.printStackTrace();
+
+                                    } finally {
+
+                                        loading = false;
+
+                                        hidepDialog();
+                                    }
+                                }
+                            }, new Response.ErrorListener() {
+                        @Override
+                        public void onErrorResponse(VolleyError error) {
+
+                            if (!isAdded() || getActivity() == null) {
+
+                                Log.e("ERROR", "ProfileFragment Not Added to Activity");
+
+                                return;
+                            }
+
+                            loading = false;
+
+                            hidepDialog();
+                        }
+                    }) {
+
+                        @Override
+                        protected Map<String, String> getParams() {
+                            Map<String, String> params = new HashMap<String, String>();
+                            params.put("accountId", Long.toString(App.getInstance().getId()));
+                            params.put("accessToken", App.getInstance().getAccessToken());
+                            params.put("profileId", Long.toString(profile.getId()));
+                            params.put("reason", "example");
+
+                            return params;
+                        }
+                    };
+
+                    App.getInstance().addToRequestQueue(jsonReq);
+
+                }
+                else {
+
+                    loading = true;
+                    showpDialog();
+
+                    CustomRequest jsonReq = new CustomRequest(Request.Method.POST, METHOD_BLACKLIST_REMOVE, null,
+                            new Response.Listener<JSONObject>() {
+                                @Override
+                                public void onResponse(JSONObject response) {
+
+                                    if (!isAdded() || getActivity() == null) {
+
+                                        Log.e("ERROR", "ProfileFragment Not Added to Activity");
+                                        return;
+                                    }
+
+                                    try {
+
+                                        if (!response.getBoolean("error")) {
+
+                                            profile.setBlocked(false);
+
+                                            Toast.makeText(getActivity(), getString(R.string.msg_profile_removed_from_blacklist), Toast.LENGTH_SHORT).show();
+                                        }
+
+                                    } catch (JSONException e) {
+
+                                        e.printStackTrace();
+
+                                    } finally {
+
+                                        loading = false;
+                                        hidepDialog();
+                                    }
+                                }
+                            }, new Response.ErrorListener() {
+                        @Override
+                        public void onErrorResponse(VolleyError error) {
+
+                            if (!isAdded() || getActivity() == null) {
+
+                                Log.e("ERROR", "ProfileFragment Not Added to Activity");
+
+                                return;
+                            }
+
+                            loading = false;
+
+                            hidepDialog();
+                        }
+                    }) {
+
+                        @Override
+                        protected Map<String, String> getParams() {
+                            Map<String, String> params = new HashMap<String, String>();
+                            params.put("accountId", Long.toString(App.getInstance().getId()));
+                            params.put("accessToken", App.getInstance().getAccessToken());
+                            params.put("profileId", Long.toString(profile.getId()));
+
+                            return params;
+                        }
+                    };
+                    App.getInstance().addToRequestQueue(jsonReq);
+                }
+            }
+        });
+        mBottomSheetDialog.show();
+
+    }
+
     public void profileBlock() {
 
         if (!profile.isBlocked()) {
@@ -2283,7 +2532,8 @@ public class ProfileFragment extends Fragment implements Constants, SwipeRefresh
 
             alertDialog.show();
 
-        } else {
+        }
+        else {
 
             loading = true;
             showpDialog();
@@ -2549,7 +2799,9 @@ public class ProfileFragment extends Fragment implements Constants, SwipeRefresh
             public void onClick(View view) {
                 mBottomSheetDialog.dismiss();
                 if (!profile.isInBlackList()) {
-                    choiceGiftDialog();
+                    //choiceGiftDialog();
+                    mBottomSheetDialog.dismiss();
+                    share(0);
                 } else {
                     Toast.makeText(getActivity(), getString(R.string.error_action), Toast.LENGTH_SHORT).show();
                 }
@@ -2562,7 +2814,8 @@ public class ProfileFragment extends Fragment implements Constants, SwipeRefresh
 
                 mBottomSheetDialog.dismiss();
 
-                profileBlock();
+                //profileBlock();
+                blockUser();
             }
         });
 
@@ -2572,7 +2825,8 @@ public class ProfileFragment extends Fragment implements Constants, SwipeRefresh
 
                 mBottomSheetDialog.dismiss();
 
-                profileReport();
+                //profileReport();
+                report();
             }
         });
 

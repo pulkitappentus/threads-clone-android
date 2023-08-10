@@ -879,6 +879,7 @@ public class FeedFragment extends Fragment implements Constants, SwipeRefreshLay
         }
 
         mMessage.setText(message);
+
         mMessage.setVisibility(View.VISIBLE);
 
         mSplash.setVisibility(View.VISIBLE);

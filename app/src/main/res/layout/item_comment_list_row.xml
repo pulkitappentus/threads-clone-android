@@ -93,7 +93,7 @@
                 android:autoLink="web"
                 android:textColorLink="#5BCFF2"
                 android:textColor="@color/black"
-                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_3sdp"
                 android:textSize="@dimen/_10ssp"
                 android:id="@+id/itemDescription"
                 android:layout_width="wrap_content"
@@ -105,55 +105,63 @@
                 />
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:layout_marginTop="@dimen/_4sdp"
                 android:layout_marginHorizontal="@dimen/_10sdp"
-                app:layout_constraintTop_toBottomOf="@+id/itemDescription"
-                app:layout_constraintStart_toEndOf="@+id/itemAuthorPhoto">
+                android:layout_marginTop="@dimen/_4sdp"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/itemAuthorPhoto"
+                app:layout_constraintTop_toBottomOf="@+id/itemDescription">
 
                 <ImageView
                     android:layout_width="15dp"
                     android:layout_height="15dp"
-                    app:srcCompat="@drawable/ic_like_unselect"
-                    android:visibility="visible" />
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/ic_like_unselect" />
 
                 <TextView
                     android:id="@+id/tvLikeCount"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="236 liked"
+                    style="@style/TVRegular"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:textSize="@dimen/_11sdp"
+                    android:text="0 likes"
                     android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                     android:textColor="@color/material_grey_600"
-                    android:fontFamily="@font/poppins_regular"
-                    android:layout_marginHorizontal="@dimen/_5sdp"
                     android:visibility="visible" />
 
-                <TextView
-                    android:id="@+id/itemTimeAgo"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="just now"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-                    android:textColor="@color/material_grey_600"
-                    android:fontFamily="@font/poppins_regular"
-                    android:layout_marginHorizontal="@dimen/_10sdp"
-                    android:visibility="visible" />
 
             </LinearLayout>
 
+            <TextView
+                android:id="@+id/itemTimeAgo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="just now"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/material_grey_600"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/itemMenuButton"
+                app:layout_constraintEnd_toStartOf="@+id/itemMenuButton"
+                app:layout_constraintTop_toTopOf="@+id/itemMenuButton" />
+
             <ImageView
                 android:id="@+id/itemMenuButton"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
                 android:clickable="true"
+                android:layout_marginEnd="@dimen/_12sdp"
                 android:padding="5dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintBottom_toBottomOf="@id/llName"
                 app:layout_constraintTop_toTopOf="@id/llName"
-                app:srcCompat="@drawable/ic_horizontal_popup" />
+                app:srcCompat="@drawable/ic_horizontal_popup"
+                app:tint="@color/black" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

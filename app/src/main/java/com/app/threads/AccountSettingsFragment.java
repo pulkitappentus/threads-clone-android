@@ -44,9 +44,11 @@ public class AccountSettingsFragment extends Fragment implements Constants {
     private int sex, year, month, day;
 
     EditText mFullname, mLocation, mFacebookPage, mInstagramPage, mBio,etDateBirth;
-    Button mBirth,btnCopyLink,btnMale,btnFeMale,btnOther,btnSave;
+    Button mBirth,btnMale,btnFeMale,btnOther;
+    //btnCopyLink
+    TextView btnSave;
     Spinner mSexSpinner;
-    TextView tvLink;
+    //TextView tvLink;
     ImageView ivBack;
     private Boolean loading = false;
 
@@ -87,13 +89,13 @@ public class AccountSettingsFragment extends Fragment implements Constants {
         mFacebookPage = (EditText) rootView.findViewById(R.id.facebookPage);
         mInstagramPage = (EditText) rootView.findViewById(R.id.instagramPage);
         mBio = (EditText) rootView.findViewById(R.id.etAboutUs);
-        btnCopyLink = (Button) rootView.findViewById(R.id.btnCopyLink);
-        tvLink = (TextView) rootView.findViewById(R.id.tvLink);
+        //btnCopyLink = (Button) rootView.findViewById(R.id.btnCopyLink);
+        //tvLink = (TextView) rootView.findViewById(R.id.tvLink);
         etDateBirth = (EditText) rootView.findViewById(R.id.etDateBirth);
         btnMale = (Button) rootView.findViewById(R.id.btnMale);
         btnFeMale = (Button) rootView.findViewById(R.id.btnFeMale);
         btnOther = (Button) rootView.findViewById(R.id.btnOther);
-        btnSave = (Button) rootView.findViewById(R.id.btnSave);
+        btnSave = (TextView) rootView.findViewById(R.id.btnSave);
         ivBack = (ImageView) rootView.findViewById(R.id.ivBack);
         ivBack.setOnClickListener(view -> getActivity().finish());
 
@@ -123,21 +125,21 @@ public class AccountSettingsFragment extends Fragment implements Constants {
       //  mBirth.setText(getString(R.string.action_select_birth) + ": " + new StringBuilder().append(day).append("/").append(mMonth1).append("/").append(year));
 
         // Inflate the layout for this fragment
-        btnCopyLink.setOnClickListener(view -> {
-            ClipboardManager clipboard = (ClipboardManager) getActivity().getSystemService(getActivity().CLIPBOARD_SERVICE);
-            ClipData clip = ClipData.newPlainText(userName, API_DOMAIN + userName);
-            clipboard.setPrimaryClip(clip);
-
-            Snackbar snackbar = Snackbar.make(getView(),"Profile link copied", Snackbar.LENGTH_LONG);
-            Snackbar.SnackbarLayout snackbarLayout = (Snackbar.SnackbarLayout) snackbar.getView();
-            FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) snackbarLayout.getLayoutParams();
-            layoutParams.setMargins(0, 0, 32, 32);
-            snackbarLayout.setLayoutParams(layoutParams);
-            snackbar.show();
-
-        });
-
-        tvLink.setText((API_DOMAIN + userName));
+//        btnCopyLink.setOnClickListener(view -> {
+//            ClipboardManager clipboard = (ClipboardManager) getActivity().getSystemService(getActivity().CLIPBOARD_SERVICE);
+//            ClipData clip = ClipData.newPlainText(userName, API_DOMAIN + userName);
+//            clipboard.setPrimaryClip(clip);
+//
+//            Snackbar snackbar = Snackbar.make(getView(),"Profile link copied", Snackbar.LENGTH_LONG);
+//            Snackbar.SnackbarLayout snackbarLayout = (Snackbar.SnackbarLayout) snackbar.getView();
+//            FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) snackbarLayout.getLayoutParams();
+//            layoutParams.setMargins(0, 0, 32, 32);
+//            snackbarLayout.setLayoutParams(layoutParams);
+//            snackbar.show();
+//
+//        });
+//
+//        tvLink.setText((API_DOMAIN + userName));
 
         if(sex==1){
             btnMale.setBackground(getResources().getDrawable(R.drawable.bg_btn_selected));

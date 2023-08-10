@@ -53,6 +53,7 @@ public class CommentsListAdapter extends RecyclerView.Adapter<CommentsListAdapte
         public ImageView mItemMenuButton;
         public EmojiconTextView mItemDescription;
         public TextView mItemTimeAgo;
+        public TextView tvLikeCount;
 
         public ViewHolder(View v) {
             super(v);
@@ -67,6 +68,7 @@ public class CommentsListAdapter extends RecyclerView.Adapter<CommentsListAdapte
 
             mItemMenuButton = (ImageView) v.findViewById(R.id.itemMenuButton);
             mItemTimeAgo = (TextView) v.findViewById(R.id.itemTimeAgo);
+            tvLikeCount = (TextView) v.findViewById(R.id.tvLikeCount);
         }
 
     }
@@ -120,6 +122,8 @@ public class CommentsListAdapter extends RecyclerView.Adapter<CommentsListAdapte
 
         holder.mItemAuthor.setVisibility(View.VISIBLE);
         holder.mItemAuthor.setText(p.getOwner().getFullname());
+
+        //holder.tvLikeCount.setText(String.valueOf(items.size())+" likes");
 
         holder.mItemAuthor.setOnClickListener(new View.OnClickListener() {
 
