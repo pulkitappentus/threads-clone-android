@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/ivLine"
+        android:src="@drawable/ic_line"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_5sdp"
+        android:layout_marginVertical="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvReportPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reportPost"
+        style="@style/TVBold"
+        android:textSize="@dimen/_14sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginVertical="@dimen/_15sdp"
+        android:layout_gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/ivLine"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/vviww"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F5F5F5"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@+id/tvReportPost"/>
+
+    <TextView
+        android:id="@+id/tvReportPostTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Why are you reporting this post?"
+        style="@style/TVMeadium"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:textSize="@dimen/_13sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/vviww"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSelect"
+        style="@style/TVRegular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:textSize="@dimen/_12sdp"
+        android:text="Your report is anonymous, except if you're reporting an intellectual property infringement. If someone is in immediate danger, call the local emergency services - don't wait."
+        android:textColor="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvReportPostTag" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:checkedButton="@+id/time_selector_first_radio"
+        app:layout_constraintTop_toBottomOf="@+id/tvSelect"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/rbSpam"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:button="@null"
+            android:background="@drawable/bg_checkbox"
+            />
+
+        <RadioButton
+            android:id="@+id/rbHateSpeech"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:button="@null"
+            android:background="@drawable/bg_checkbox"
+            />
+
+        <RadioButton
+            android:id="@+id/rbNudity"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:button="@null"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/bg_checkbox"
+            />
+
+        <RadioButton
+            android:id="@+id/rbFakeProfile"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:button="@null"
+            android:background="@drawable/bg_checkbox"
+            />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvSpam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_profile_report_0"
+        style="@style/TVRegular"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginVertical="@dimen/_20sdp"
+        android:layout_gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/tvSelect"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/tvHateSpeech"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_profile_report_1"
+        style="@style/TVRegular"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginVertical="@dimen/_18sdp"
+        app:layout_constraintTop_toBottomOf="@+id/tvSpam"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/tvNudity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_profile_report_2"
+        style="@style/TVRegular"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginVertical="@dimen/_15sdp"
+        app:layout_constraintTop_toBottomOf="@+id/tvHateSpeech"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup" />
+
+
+    <TextView
+        android:id="@+id/tvFake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_profile_report_3"
+        style="@style/TVRegular"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginVertical="@dimen/_15sdp"
+        android:layout_gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/tvNudity"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/tvCancel"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_36sdp"
+        android:text="@string/cancel"
+        style="@style/TVSemiBold"
+        android:textSize="@dimen/_12sdp"
+        android:gravity="center"
+        android:background="@drawable/button_white"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginVertical="@dimen/_25sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_gravity="center_vertical"
+        app:layout_constraintEnd_toStartOf="@+id/tvYes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvYes"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_36sdp"
+        android:text="@string/action_report"
+        style="@style/TVSemiBold"
+        android:textSize="@dimen/_12sdp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_gredient"
+        android:layout_marginVertical="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvCancel"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

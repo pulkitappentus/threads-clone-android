@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.app.threads.AccountSettingsFragment"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2"
+        android:background="#fff">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp"
+            android:background="#fff">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/emailAddress"
+                style="@style/TVRegular" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:inputType="textPersonName"
+                android:hint="@string/enterEmailAddress"
+                android:ems="10"
+                android:id="@+id/email"
+                android:maxLength="64"
+                style="@style/ETRegular"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:background="@drawable/button_white"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/placeholder_subject"
+                android:layout_marginTop="@dimen/_20sdp"
+                style="@style/TVRegular" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:id="@+id/subject"
+                android:hint="Enter subject"
+                android:maxLength="255"
+                style="@style/ETRegular"
+                android:layout_marginTop="10dp"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:background="@drawable/button_white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/placeholder_support_detail"
+                style="@style/TVRegular" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_180sdp"
+                android:hint="Enter"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:maxLength="455"
+                android:id="@+id/detail"
+                style="@style/ETRegular"
+                android:gravity="start"
+                android:layout_marginTop="10dp"
+                android:paddingVertical="@dimen/_10sdp"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:background="@drawable/button_white"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/send"
+                android:id="@+id/btnSend"
+                style="@style/TVSemiBold"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_12ssp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="55dp"
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="@dimen/_25sdp"
+                android:background="@drawable/bg_gredient" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

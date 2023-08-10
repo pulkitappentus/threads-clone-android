@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:scrollingCache="true">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:minHeight="@dimen/spacing_xlarge"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/nav_gallery"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_85sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="@dimen/_5sdp"
+                app:layout_constraintEnd_toStartOf="@+id/nav_groups"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:id="@+id/rplGallery"
+                    style="@style/RippleStyleBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_85sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:padding="@dimen/spacing_middle">
+
+                        <ImageView
+                            android:id="@+id/nav_gallery_icon"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="@dimen/spacing_medium"
+                            app:srcCompat="@drawable/ic_gallerys" />
+
+                        <TextView
+                            style="@style/TVMeadium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="@dimen/_8sdp"
+                            android:text="@string/nav_gallery"
+                            android:textColor="@color/grey_dark"
+                            android:textSize="@dimen/_12ssp" />
+
+                    </LinearLayout>
+
+                </com.balysv.materialripple.MaterialRippleLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/nav_groups"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_85sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="@dimen/_5sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/nav_gallery"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:id="@+id/rplCommunities"
+                    style="@style/RippleStyleBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_85sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/spacing_middle"
+                        android:paddingTop="@dimen/spacing_medium"
+                        android:paddingRight="@dimen/spacing_middle"
+                        android:paddingBottom="@dimen/spacing_medium">
+
+                        <ImageView
+                            android:id="@+id/nav_groups_icon"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="@dimen/spacing_medium"
+                            app:srcCompat="@drawable/ic_groups_active" />
+
+                        <TextView
+                            style="@style/TVMeadium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="@dimen/_8sdp"
+                            android:text="@string/nav_groups"
+                            android:textColor="@color/grey_dark"
+                            android:textSize="@dimen/_12ssp" />
+
+                    </LinearLayout>
+                </com.balysv.materialripple.MaterialRippleLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/nav_friends"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_85sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="@dimen/_5sdp"
+                app:layout_constraintEnd_toStartOf="@+id/nav_guests"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nav_gallery">
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    style="@style/RippleStyleBlack"
+                    android:id="@+id/rplFriends"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_85sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/spacing_middle"
+                        android:paddingTop="@dimen/spacing_medium"
+                        android:paddingRight="@dimen/spacing_middle"
+                        android:paddingBottom="@dimen/spacing_medium">
+
+                        <ImageView
+                            android:id="@+id/nav_friends_icon"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="@dimen/spacing_medium"
+                            app:srcCompat="@drawable/ic_friends" />
+
+                        <TextView
+                            style="@style/TVMeadium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="@dimen/_8sdp"
+                            android:text="@string/nav_friends"
+                            android:textColor="@color/grey_dark"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <!--   <ImageView
+                               android:id="@+id/nav_friends_count_icon"
+                               android:layout_width="8dp"
+                               android:layout_height="8dp"
+                               android:layout_marginLeft="8dp"
+                               android:src="@drawable/ic_online"
+                               app:tint="@color/grey_medium" />-->
+
+                    </LinearLayout>
+
+                </com.balysv.materialripple.MaterialRippleLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/nav_guests"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_85sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="@dimen/_5sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/nav_friends"
+                app:layout_constraintTop_toBottomOf="@+id/nav_gallery">
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    style="@style/RippleStyleBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_85sdp"
+                    android:id="@+id/rplGuests">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/spacing_middle"
+                        android:paddingTop="@dimen/spacing_medium"
+                        android:paddingRight="@dimen/spacing_middle"
+                        android:paddingBottom="@dimen/spacing_medium">
+
+                        <ImageView
+                            android:id="@+id/nav_guests_icon"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="@dimen/spacing_medium"
+                            app:srcCompat="@drawable/ic_guest" />
+
+                        <TextView
+                            style="@style/TVMeadium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="@dimen/_8sdp"
+                            android:text="@string/nav_guests"
+                            android:textColor="@color/grey_dark"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <!--  <ImageView
+                              android:id="@+id/nav_guests_count_icon"
+                              android:layout_width="8dp"
+                              android:layout_height="8dp"
+                              android:layout_marginLeft="8dp"
+                              android:src="@drawable/ic_online"
+                              app:tint="@color/grey_medium" />-->
+
+                    </LinearLayout>
+                </com.balysv.materialripple.MaterialRippleLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/nav_market"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_85sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="@dimen/_5sdp"
+                app:layout_constraintEnd_toStartOf="@+id/nav_favorites"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nav_friends">
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    style="@style/RippleStyleBlack"
+                    android:layout_width="match_parent"
+                    android:id="@+id/rplMarketPlace"
+                    android:layout_height="@dimen/_85sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/spacing_middle"
+                        android:paddingTop="@dimen/spacing_medium"
+                        android:paddingRight="@dimen/spacing_middle"
+                        android:paddingBottom="@dimen/spacing_medium">
+
+                        <ImageView
+                            android:id="@+id/nav_market_icon"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="@dimen/spacing_medium"
+                            app:srcCompat="@drawable/ic_markets" />
+
+                        <TextView
+                            style="@style/TVMeadium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="@dimen/_8sdp"
+                            android:text="@string/nav_market"
+                            android:textColor="@color/grey_dark"
+                            android:textSize="@dimen/_12ssp" />
+
+                    </LinearLayout>
+                </com.balysv.materialripple.MaterialRippleLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/nav_nearby"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_85sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="@dimen/_5sdp"
+                app:layout_constraintEnd_toStartOf="@+id/nav_popular"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nav_market">
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:id="@+id/rpPeopleNearBy"
+                    style="@style/RippleStyleBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_85sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/spacing_middle"
+                        android:paddingTop="@dimen/spacing_medium"
+                        android:paddingRight="@dimen/spacing_middle"
+                        android:paddingBottom="@dimen/spacing_medium">
+
+                        <ImageView
+                            android:id="@+id/nav_nearby_icon"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="@dimen/spacing_medium"
+                            app:srcCompat="@drawable/ic_nearby" />
+
+                        <TextView
+                            style="@style/TVMeadium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="@dimen/_8sdp"
+                            android:text="@string/nav_nearby"
+                            android:textColor="@color/grey_dark"
+                            android:textSize="@dimen/_12ssp" />
+
+                    </LinearLayout>
+                </com.balysv.materialripple.MaterialRippleLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/nav_popular"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_85sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="@dimen/_5sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/nav_nearby"
+                app:layout_constraintTop_toBottomOf="@+id/nav_market">
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    style="@style/RippleStyleBlack"
+                    android:id="@+id/rplPopular"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_85sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/spacing_middle"
+                        android:paddingTop="@dimen/spacing_medium"
+                        android:paddingRight="@dimen/spacing_middle"
+                        android:paddingBottom="@dimen/spacing_medium">
+
+                        <ImageView
+                            android:id="@+id/nav_popular_icon"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="@dimen/spacing_medium"
+                            app:srcCompat="@drawable/ic_populars" />
+
+                        <TextView
+                            style="@style/TVMeadium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="@dimen/_8sdp"
+                            android:text="@string/nav_popular"
+                            android:textColor="@color/grey_dark"
+                            android:textSize="@dimen/_12ssp" />
+
+                    </LinearLayout>
+                </com.balysv.materialripple.MaterialRippleLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/nav_favorites"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_85sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="@dimen/_5sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/nav_market"
+                app:layout_constraintTop_toBottomOf="@+id/nav_friends"
+
+                >
+                <com.balysv.materialripple.MaterialRippleLayout
+                    style="@style/RippleStyleBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_85sdp"
+                    android:id="@+id/rplFavorite"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/nav_market">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/spacing_middle"
+                        android:paddingTop="@dimen/spacing_medium"
+                        android:paddingRight="@dimen/spacing_middle"
+                        android:paddingBottom="@dimen/spacing_medium">
+
+                        <ImageView
+                            android:id="@+id/nav_favorites_icon"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="@dimen/spacing_medium"
+                            app:srcCompat="@drawable/ic_heart" />
+
+                        <TextView
+                            style="@style/TVMeadium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="@dimen/_8sdp"
+                            android:text="@string/nav_favorites"
+                            android:textColor="@color/grey_dark"
+                            android:textSize="@dimen/_12ssp" />
+
+                    </LinearLayout>
+                </com.balysv.materialripple.MaterialRippleLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/nav_stream"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_85sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="@dimen/_5sdp"
+                app:layout_constraintEnd_toStartOf="@id/nav_upgrades"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nav_nearby">
+
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    style="@style/RippleStyleBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_85sdp"
+                    android:id="@+id/rplStream"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/spacing_middle"
+                        android:paddingTop="@dimen/spacing_medium"
+                        android:paddingRight="@dimen/spacing_middle"
+                        android:paddingBottom="@dimen/spacing_medium">
+
+                        <ImageView
+                            android:id="@+id/nav_stream_icon"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="@dimen/spacing_medium"
+                            app:srcCompat="@drawable/ic_stream" />
+
+                        <TextView
+                            style="@style/TVMeadium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="@dimen/_8sdp"
+                            android:text="@string/nav_stream"
+                            android:textColor="@color/grey_dark"
+                            android:textSize="@dimen/_12ssp" />
+
+                    </LinearLayout>
+                </com.balysv.materialripple.MaterialRippleLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/nav_upgrades"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_85sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="@dimen/_5sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/nav_stream"
+                app:layout_constraintTop_toBottomOf="@+id/nav_nearby">
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    style="@style/RippleStyleBlack"
+                    android:id="@+id/rplUpgrades"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_85sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/spacing_middle"
+                        android:paddingTop="@dimen/spacing_medium"
+                        android:paddingRight="@dimen/spacing_middle"
+                        android:paddingBottom="@dimen/spacing_medium">
+
+                        <ImageView
+                            android:id="@+id/nav_upgrades_icon"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="@dimen/spacing_medium"
+                            app:srcCompat="@drawable/ic_upgrade" />
+
+                        <TextView
+                            style="@style/TVMeadium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="@dimen/_8sdp"
+                            android:text="@string/nav_upgrades"
+                            android:textColor="@color/grey_dark"
+                            android:textSize="@dimen/_12ssp" />
+
+                    </LinearLayout>
+                </com.balysv.materialripple.MaterialRippleLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/nav_settings"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_85sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="@dimen/_5sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/nav_default"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nav_stream">
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    style="@style/RippleStyleBlack"
+                    android:layout_width="match_parent"
+                    android:id="@+id/rplSetting"
+                    android:layout_height="@dimen/_85sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/spacing_middle"
+                        android:paddingTop="@dimen/spacing_medium"
+                        android:paddingRight="@dimen/spacing_middle"
+                        android:paddingBottom="@dimen/spacing_medium">
+
+                        <ImageView
+                            android:id="@+id/nav_settings_icon"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="@dimen/spacing_medium"
+                            app:srcCompat="@drawable/ic_setting" />
+
+                        <TextView
+                            style="@style/TVMeadium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="@dimen/_8sdp"
+                            android:text="@string/nav_settings"
+                            android:textColor="@color/grey_dark"
+                            android:textSize="@dimen/_12ssp" />
+
+                    </LinearLayout>
+
+                </com.balysv.materialripple.MaterialRippleLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/nav_default"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_85sdp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:visibility="invisible"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="@dimen/_5sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/nav_settings"
+                app:layout_constraintTop_toBottomOf="@+id/nav_stream">
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    style="@style/RippleStyleBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/spacing_middle"
+                        android:paddingTop="@dimen/spacing_medium"
+                        android:paddingRight="@dimen/spacing_middle"
+                        android:paddingBottom="@dimen/spacing_medium">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="@dimen/spacing_medium"
+                            app:srcCompat="@drawable/ic_setting" />
+
+                        <TextView
+                            style="@style/TVMeadium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="@dimen/_8sdp"
+                            android:text="@string/nav_settings"
+                            android:textColor="@color/grey_dark"
+                            android:textSize="@dimen/_12ssp" />
+
+                    </LinearLayout>
+
+                </com.balysv.materialripple.MaterialRippleLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

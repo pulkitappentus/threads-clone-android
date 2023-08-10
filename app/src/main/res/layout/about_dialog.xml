@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/aboutDialogContent">
+
+    <ImageView
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_4sdp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_line"
+        android:layout_marginVertical="@dimen/_10sdp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="12dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_33sdp"
+        android:src="@drawable/app_logo"
+        android:layout_marginTop="@dimen/_20sdp"
+        />
+
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/aboutDialogAppName"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:singleLine="true"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:paddingTop="12dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="2dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/aboutDialogAppVersion"
+        android:gravity="center"
+        android:padding="5dp"
+        android:singleLine="true"
+        style="@style/TVRegular"
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/aboutDialogAppCopyright"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="12dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" />
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/bg_gredient"
+        android:text="OK"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/_20sdp"
+        />
+
+</LinearLayout>

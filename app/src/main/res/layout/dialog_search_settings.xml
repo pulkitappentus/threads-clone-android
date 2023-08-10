@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView5" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivLine"
+                android:src="@drawable/ic_line"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_5sdp"
+                android:layout_gravity="center"
+                android:layout_marginVertical="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/tvShareWith"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/searchFilter"
+                style="@style/TVSemiBold"
+                android:textSize="@dimen/_14sdp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:layout_gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@+id/ivLine"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_sex"
+                style="@style/TVRegular"
+                android:id="@+id/textView5"
+                android:layout_marginLeft="6dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_15sdp">
+
+                <TextView
+                    android:layout_width="@dimen/_75sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:text="@string/label_male"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    style="@style/TVRegular"
+                    android:background="@drawable/bg_btn_unselect"
+                    android:id="@+id/genderMale" />
+
+                <TextView
+                    android:layout_width="@dimen/_75sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:text="@string/label_female"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    style="@style/TVRegular"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                  android:background="@drawable/bg_btn_unselect"
+                    android:id="@+id/genderFemale"
+                 />
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="@dimen/_75sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:text="@string/other"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    style="@style/TVRegular"
+                  android:background="@drawable/bg_btn_unselect"
+                    android:id="@+id/tvOther"
+                  />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_activity"
+                android:id="@+id/textView4"
+                style="@style/TVRegular"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="6dp" />
+
+            <TextView
+                android:layout_width="@dimen/_75sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:text="@string/label_online"
+                android:gravity="center"
+                style="@style/TVRegular"
+              android:background="@drawable/bg_btn_unselect"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:id="@+id/tvOnline"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_additional"
+                style="@style/TVRegular"
+                android:id="@+id/textView_additional"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="6dp" />
+
+
+            <TextView
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:text="@string/label_only_with_photo"
+                android:gravity="center"
+                style="@style/TVRegular"
+              android:background="@drawable/bg_btn_unselect"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:id="@+id/tvOnlyWithPhoto"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnApply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Apply"
+        style="@style/TVSemiBold"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginVertical="@dimen/_20sdp"
+        android:background="@drawable/bg_gredient"
+        />
+
+</LinearLayout>

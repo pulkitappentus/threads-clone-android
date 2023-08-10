@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/spacing_medium"
+    android:paddingTop="@dimen/spacing_medium">
+
+    <ImageView
+        android:id="@+id/ivLine"
+        android:src="@drawable/ic_line"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_5sdp"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:layout_gravity="center_horizontal"
+       />
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        style="@style/RippleStyleBlack"
+        android:id="@+id/delete_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/spacing_middle"
+        android:paddingRight="@dimen/spacing_middle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:padding="@dimen/spacing_large"
+                app:srcCompat="@drawable/ic_delete"
+                app:tint="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_middle"
+                android:layout_marginRight="@dimen/spacing_middle"
+                android:text="@string/action_delete_permanently"
+                style="@style/TVRegular"
+                android:textSize="@dimen/_14ssp"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        style="@style/RippleStyleBlack"
+        android:id="@+id/restore_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/spacing_middle"
+        android:paddingRight="@dimen/spacing_middle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:padding="@dimen/spacing_large"
+                app:srcCompat="@drawable/ic_restore"
+                app:tint="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_middle"
+                android:layout_marginRight="@dimen/spacing_middle"
+                android:text="@string/action_restore"
+                android:textSize="@dimen/_14ssp"
+                style="@style/TVRegular"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+</LinearLayout>

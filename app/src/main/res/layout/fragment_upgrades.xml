@@ -1,0 +1,292 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="?actionBarSize"
+    android:orientation="vertical"
+    tools:context=".UpgradesFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:background="@drawable/bg_upgrade"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ivCredit"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:src="@drawable/ic_credites"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_credits"
+                    android:id="@+id/labelCredits"
+                    android:textSize="16dp"
+                    style="@style/TVSemiBold"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    app:layout_constraintTop_toTopOf="@id/ivCredit"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivCredit"
+                    app:layout_constraintStart_toEndOf="@+id/ivCredit"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_credits_desc"
+                    android:id="@+id/labelCreditsDesc"
+                    android:layout_marginTop="8dp"
+                    style="@style/TVRegular"
+                    android:padding="@dimen/_10sdp"
+                    android:lineSpacingExtra="1dp"
+                    android:textSize="14dp"
+                    app:layout_constraintTop_toBottomOf="@+id/labelCredits"
+                    app:layout_constraintStart_toStartOf="parent"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/action_buy_credits"
+                    android:id="@+id/getCreditsBtn"
+                    android:textColor="@color/white"
+                    android:background="@drawable/bg_gredient"
+                    android:layout_marginHorizontal="@dimen/_40sdp"
+                    android:layout_marginTop="5dp"
+                    android:textAllCaps="false"
+                    android:layout_marginBottom="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/labelCreditsDesc"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_upgrade"
+                android:layout_marginTop="32dp">
+
+                <ImageView
+                    android:id="@+id/ivGhost"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:src="@drawable/ic_ghost_mode"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_upgrades_ghost_mode"
+                        android:id="@+id/labelGhostMode"
+                        android:textSize="16dp"
+                        style="@style/TVSemiBold"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        app:layout_constraintTop_toTopOf="@id/ivGhost"
+                        app:layout_constraintBottom_toBottomOf="@+id/ivGhost"
+                        app:layout_constraintStart_toEndOf="@+id/ivGhost" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_upgrades_ghost_mode_desc"
+                        android:id="@+id/labelGhostModeDesc"
+                        style="@style/TVRegular"
+                        android:padding="@dimen/_10sdp"
+                        android:lineSpacingExtra="1dp"
+                        android:textSize="14dp"
+                        app:layout_constraintTop_toBottomOf="@+id/labelGhostMode"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_ghost_mode_enabled"
+                        android:id="@+id/labelGhostModeStatus"
+                        android:textSize="16dp"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#2c5305" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/action_enable"
+                        android:id="@+id/ghostModeBtn"
+                        android:textColor="@color/white"
+                        android:background="@drawable/bg_gredient"
+                        android:layout_marginHorizontal="@dimen/_40sdp"
+                        android:layout_marginTop="5dp"
+                        android:textAllCaps="false"
+                        android:layout_marginBottom="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/labelGhostModeDesc" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_upgrade"
+                android:layout_marginTop="32dp" >
+
+                <ImageView
+                    android:id="@+id/ivVerified"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:src="@drawable/ic_verify_badge"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_upgrades_verified_badge"
+                        android:id="@+id/labelVerifiedBadge"
+                        android:textSize="16dp"
+                        style="@style/TVSemiBold"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        app:layout_constraintTop_toTopOf="@id/ivVerified"
+                        app:layout_constraintBottom_toBottomOf="@+id/ivVerified"
+                        app:layout_constraintStart_toEndOf="@+id/ivVerified"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_upgrades_verified_badge_desc"
+                        android:id="@+id/labelVerifiedBadgeDesc"
+                        android:textSize="14dp"
+                        style="@style/TVRegular"
+                        android:padding="@dimen/_10sdp"
+                        android:lineSpacingExtra="1dp"
+                        app:layout_constraintTop_toBottomOf="@+id/labelVerifiedBadge"
+                        app:layout_constraintStart_toStartOf="parent"/>
+
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_verified_badge_enabled"
+                        android:id="@+id/labelVerifiedBadgeStatus"
+                        android:textSize="16dp"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#FF2C5305" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/action_enable"
+                        android:id="@+id/verifiedBadgeBtn"
+                        android:textColor="@color/white"
+                        android:background="@drawable/bg_gredient"
+                        android:layout_marginHorizontal="@dimen/_40sdp"
+                        android:layout_marginTop="5dp"
+                        android:textAllCaps="false"
+                        android:layout_marginBottom="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/labelVerifiedBadgeDesc"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_upgrade"
+                android:layout_marginTop="32dp" >
+
+                <ImageView
+                    android:id="@+id/ivDisableAds"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:src="@drawable/ic_ads_disable"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_upgrades_disable_ads"
+                        android:id="@+id/labelDisableAds"
+                        android:textSize="16dp"
+                        style="@style/TVSemiBold"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        app:layout_constraintTop_toTopOf="@id/ivDisableAds"
+                        app:layout_constraintBottom_toBottomOf="@+id/ivDisableAds"
+                        app:layout_constraintStart_toEndOf="@+id/ivDisableAds"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_upgrades_disable_ads_desc"
+                        android:id="@+id/labelDisableAdsDesc"
+                        android:textSize="14dp"
+                        style="@style/TVRegular"
+                        android:padding="@dimen/_10sdp"
+                        android:lineSpacingExtra="1dp"
+                        app:layout_constraintTop_toBottomOf="@+id/labelDisableAds"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_disable_ads_enabled"
+                        android:id="@+id/labelDisableAdsStatus"
+                        android:textSize="16dp"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#FF2C5305"
+                        android:layout_marginBottom="8dp" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/action_enable"
+                        android:id="@+id/disableAdsBtn"
+                        android:textColor="@color/white"
+                        android:background="@drawable/bg_gredient"
+                        android:layout_marginHorizontal="@dimen/_40sdp"
+                        android:layout_marginTop="5dp"
+                        android:textAllCaps="false"
+                        android:layout_marginBottom="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/labelDisableAdsDesc" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.app.threads.RecoveryFragment">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_action_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="vertical"
+        android:fitsSystemWindows="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forgotPasswordN"
+                style="@style/TVSemiBold"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_20ssp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enterYourRegisteredEmail"
+                android:textSize="@dimen/_12ssp"
+                style="@style/TVRegular"
+                android:lineSpacingExtra="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/emailAddress"
+                style="@style/TVRegular"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <EditText
+                android:id="@+id/etRecoveryEmail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:paddingHorizontal="@dimen/_10ssp"
+                android:layout_marginTop="@dimen/_10sdp"
+                style="@style/ETRegular"
+                android:background="@drawable/button_white"
+                android:hint="@string/enterEmailAddress"
+                />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/send"
+                android:id="@+id/btnSend"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="80dp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:layout_marginHorizontal="@dimen/_25sdp"
+                android:background="@drawable/bg_gredient"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:id="@+id/scrollView">
+
+         <LinearLayout
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:padding="16dp" >
+
+             <EditText
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:inputType="textEmailAddress"
+                 android:hint="@string/placeholder_email"
+                 android:ems="10"
+                 android:layout_marginTop="10dp"
+                 android:maxLength="64"
+                 android:id="@+id/PasswordRecoveryEmail" />
+
+             <Button
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="@string/action_continue"
+                 android:id="@+id/PasswordRecoveryBtn"
+                 android:layout_gravity="center_horizontal"
+                 android:layout_marginTop="10dp"
+                 android:textColor="@color/white"
+                 android:background="@drawable/button_primary"
+                 android:textStyle="bold" />
+         </LinearLayout>
+     </ScrollView>-->
+
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <ImageView
+            android:id="@+id/ivLine"
+            android:src="@drawable/ic_line"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_5sdp"
+            android:layout_marginVertical="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/deletePost"
+            style="@style/TVBold"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginVertical="@dimen/_15sdp"
+            android:layout_gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/ivLine"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:id="@+id/vvieew"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F5F5F5"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@+id/tvDelete"/>
+
+
+        <ImageView
+            android:id="@+id/ivGallery"
+            android:src="@drawable/delete_post_ic"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginVertical="@dimen/_15sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vvieew" />
+
+
+        <TextView
+            android:id="@+id/tvDeletePost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/deletePost"
+            style="@style/TVSemiBold"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/ivGallery"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvDoYouWant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/doYouWantToDeleteThis"
+            style="@style/TVRegular"
+            android:textSize="@dimen/_11sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/tvDeletePost"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_36sdp"
+            android:text="@string/cancel"
+            style="@style/TVSemiBold"
+            android:textSize="@dimen/_12sdp"
+            android:gravity="center"
+            android:background="@drawable/button_white"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginVertical="@dimen/_25sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_gravity="center_vertical"
+            app:layout_constraintEnd_toStartOf="@+id/tvYes"
+            app:layout_constraintTop_toBottomOf="@+id/tvDoYouWant"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvYes"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_36sdp"
+            android:text="@string/yes"
+            style="@style/TVSemiBold"
+            android:textSize="@dimen/_12sdp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_gredient"
+            android:layout_marginVertical="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/tvDoYouWant"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvCancel"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

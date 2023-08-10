@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <SwitchPreference
+        android:key="allowLikesGCM"
+        android:title="@string/settings_notifications_likes">
+    </SwitchPreference>
+
+    <SwitchPreference
+        android:key="allowCommentsGCM"
+        android:title="@string/settings_notifications_comments">
+    </SwitchPreference>
+
+    <SwitchPreference
+        android:key="allowFollowersGCM"
+        android:title="@string/settings_notifications_friends_requests">
+    </SwitchPreference>
+
+    <SwitchPreference
+        android:key="allowMessagesGCM"
+        android:title="@string/settings_notifications_messages">
+    </SwitchPreference>
+
+    <SwitchPreference
+        android:key="allowCommentReplyGCM"
+        android:title="@string/settings_notifications_comment_reply">
+    </SwitchPreference>
+
+    <SwitchPreference
+        android:key="allowGiftsGCM"
+        android:title="@string/settings_notifications_gifts">
+    </SwitchPreference>
+
+</PreferenceScreen>

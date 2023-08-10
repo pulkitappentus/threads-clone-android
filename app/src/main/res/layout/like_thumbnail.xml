@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/parent"
+        style="@style/MyRippleStyleLight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_medium"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/clImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/_5sdp">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                android:id="@+id/profileImg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile_default_photo"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/tvDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.6 km"
+                style="@style/TVMeadium"
+                android:textSize="@dimen/_12ssp"
+                android:maxLines="1"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:ellipsize="end"
+                android:textColor="@color/white"
+                android:padding="5dp"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+                    <ProgressBar
+                        style="?android:attr/progressBarStyle"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/progressBar"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+    <TextView
+        android:id="@+id/profileFullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fullname"
+        style="@style/TVMeadium"
+        android:textSize="@dimen/_12ssp"
+        android:maxLines="1"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:ellipsize="end"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@+id/clImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_width="18px"
+        android:layout_height="18px"
+        android:src="@drawable/ic_verified"
+        android:id="@+id/profileIcon"
+        android:layout_marginHorizontal="@dimen/_3sdp"
+        app:layout_constraintStart_toEndOf="@+id/profileFullname"
+        app:layout_constraintTop_toTopOf="@+id/profileFullname"
+        app:layout_constraintBottom_toBottomOf="@+id/profileFullname"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/profileUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:maxLines="1"
+            style="@style/TVRegular"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/spacing_small"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profileFullname" />
+
+        <ImageView
+            android:layout_width="15px"
+            android:layout_height="15px"
+            android:src="@drawable/ic_online"
+            android:id="@+id/profileOnlineIcon"
+            app:tint="@color/green"
+            android:layout_gravity="center_vertical"
+            app:layout_constraintStart_toEndOf="@+id/profileUsername"
+            app:layout_constraintTop_toTopOf="@+id/profileUsername"
+            app:layout_constraintBottom_toBottomOf="@+id/profileUsername"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/ivLine"
+        android:src="@drawable/ic_line"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_5sdp"
+        android:layout_marginVertical="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvShareWith"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/shareWith"
+        style="@style/TVBold"
+        android:textSize="@dimen/_14sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginVertical="@dimen/_15sdp"
+        android:layout_gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/ivLine"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F5F5F5"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@+id/tvShareWith"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:checkedButton="@+id/time_selector_first_radio"
+        app:layout_constraintTop_toBottomOf="@+id/tvShareWith"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/rbPublic"
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:button="@null"
+            android:background="@drawable/bg_checkbox" />
+
+        <RadioButton
+            android:id="@+id/rbFriend"
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:button="@null"
+            android:background="@drawable/bg_checkbox" />
+
+    </RadioGroup>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/tvShareWith"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/ivPublic"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginVertical="@dimen/_15sdp"
+            android:src="@drawable/ic_public"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvPublic"
+            style="@style/TVMeadium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Anyone can reply"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintStart_toEndOf="@+id/ivPublic"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/tvPublicDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/anyoneOn"
+            style="@style/TVRegular"
+            android:textColor="@color/textColor"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/tvPublic"
+            app:layout_constraintStart_toEndOf="@+id/ivPublic"/>
+
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/ivFriend"
+            android:src="@drawable/ic_share_friend"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPublicDescription" />
+
+        <TextView
+            android:id="@+id/tvFriend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your followers can reply"
+            style="@style/TVMeadium"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/tvPublicDescription"
+            app:layout_constraintStart_toEndOf="@+id/ivFriend" />
+
+        <TextView
+            android:id="@+id/tvFriendDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yourFriendsOnMySocial"
+            android:visibility="invisible"
+            style="@style/TVRegular"
+            android:textColor="@color/textColor"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/tvFriend"
+            app:layout_constraintStart_toEndOf="@+id/ivPublic" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

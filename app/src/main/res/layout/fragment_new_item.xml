@@ -1,0 +1,621 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:emojicon="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:background="@color/white"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_44sdp">
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/ivBack"
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:src="@drawable/icc_cross"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvHeading"
+                style="@style/TVMeadium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:text="@string/createPost"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivBack"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+<!--            <View-->
+<!--                android:id="@+id/view3"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:layout_marginVertical="@dimen/_10sdp"-->
+<!--                android:background="@color/grey_10"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tvPost" />-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/viiv"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#D9D9D9"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:paddingHorizontal="@dimen/_12sdp"
+                android:paddingVertical="@dimen/_4sdp"
+                android:orientation="horizontal">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/photo_image"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/profile_default_photo"
+                    app:civ_shadow="false"
+                    app:civ_shadow_radius="0"
+                    app:civ_border="false" />
+
+                <View
+                    android:layout_width="@dimen/spacing_large"
+                    android:layout_height="0dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/fullname_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="Donald Trump"
+                            style="@style/TVSemiBold"
+                            android:textSize="@dimen/_12sdp" />
+
+<!--                        <LinearLayout-->
+<!--                            android:clickable="true"-->
+<!--                            android:id="@+id/feeling_layout"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginHorizontal="@dimen/_10sdp"-->
+<!--                            android:layout_marginTop="@dimen/spacing_small"-->
+<!--                            android:gravity="center_vertical">-->
+
+<!--                            <com.mikhaellopez.circularimageview.CircularImageView-->
+<!--                                android:id="@+id/feeling_image"-->
+<!--                                android:layout_width="@dimen/spacing_mlarge"-->
+<!--                                android:layout_height="@dimen/spacing_mlarge"-->
+<!--                                android:src="@drawable/mood"-->
+<!--                                app:civ_shadow="false"-->
+<!--                                app:civ_shadow_radius="0"-->
+<!--                                app:civ_border="false" />-->
+
+<!--                            <View-->
+<!--                                android:layout_width="@dimen/spacing_medium"-->
+<!--                                android:layout_height="0dp" />-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/feeling_label"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:gravity="center_vertical"-->
+<!--                                android:text="is feeling"-->
+<!--                                android:textColor="@color/textColor"-->
+<!--                                style="@style/TVRegular" />-->
+
+<!--                        </LinearLayout>-->
+
+                    </LinearLayout>
+
+                    <github.ankushsachdeva.emojicon.EmojiconEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/postEdit"
+                        style="@style/TVRegular"
+                        android:hint="@string/writeSomethingHere"
+                        android:scrollbarStyle="outsideInset"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:scrollbars="vertical"
+                        android:overScrollMode="never"
+                        android:gravity="left|top"
+                        android:digits="0,1,2,3,4,5,6,7,8,9,*,qwertzuiopasdfghjklyxcvbnm,_,-"
+                        android:background="@color/white"
+                        android:maxLength="1000"
+                        android:textSize="@dimen/_12sdp"
+                        emojicon:emojiconSize="24dp" />
+
+                    <ImageView
+                        android:id="@+id/ivAttach"
+                        android:layout_width="@dimen/_18sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:src="@drawable/ic_attachment"/>
+
+
+
+
+<!--                    <LinearLayout-->
+<!--                        android:clickable="true"-->
+<!--                        android:id="@+id/location_layout"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="@dimen/spacing_small"-->
+<!--                        android:gravity="center_vertical">-->
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/location_image"-->
+<!--                            android:layout_width="@dimen/spacing_mlarge"-->
+<!--                            android:layout_height="@dimen/spacing_mlarge"-->
+<!--                            app:srcCompat="@drawable/ic_nearbys" />-->
+
+<!--                        <View-->
+<!--                            android:layout_width="@dimen/spacing_medium"-->
+<!--                            android:layout_height="0dp" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/location_label"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:gravity="center_vertical"-->
+<!--                            android:text="Location"-->
+<!--                            android:textColor="@color/textColor"-->
+<!--                            style="@style/TVRegular"   />-->
+
+<!--                    </LinearLayout>-->
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_44sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_weight="1">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/nested_view"
+                android:background="@android:color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/images_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical" >
+
+                        <View
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grey_10"/>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycler_view"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginVertical="@dimen/_12sdp"
+                            android:clipToPadding="false"
+                            android:scrollbars="none" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/repost_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_strock"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:orientation="vertical">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="top"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/spacing_large">
+
+                            <com.mikhaellopez.circularimageview.CircularImageView
+                                android:id="@+id/repost_author_photo_image"
+                                android:layout_width="@dimen/spacing_xxlarge"
+                                android:layout_height="@dimen/spacing_xxlarge"
+                                android:src="@drawable/profile_default_photo"
+                                app:civ_shadow="false"
+                                app:civ_shadow_radius="0"
+                                app:civ_border="false"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"/>
+
+
+                            <TextView
+                                    android:id="@+id/repost_author_fullname_label"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:text="Repost Author"
+                                    style="@style/TVSemiBold"
+                                    android:textSize="@dimen/_12ssp"
+                                android:layout_marginHorizontal="@dimen/_10sdp"
+                                app:layout_constraintTop_toTopOf="@+id/repost_author_photo_image"
+                                app:layout_constraintBottom_toBottomOf="@+id/repost_author_photo_image"
+                                app:layout_constraintStart_toEndOf="@+id/repost_author_photo_image"
+                                   />
+
+                            <TextView
+                                android:id="@+id/repost_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLines="2"
+                                android:gravity="center_vertical"
+                                android:text="Repost text"
+                                android:layout_marginVertical="@dimen/_5sdp"
+                                style="@style/TVRegular"
+                                app:layout_constraintTop_toBottomOf="@+id/repost_author_photo_image"
+                              />
+
+                                <ImageView
+                                    android:id="@+id/repost_image"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_150sdp"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/img_loading"
+                                    android:layout_marginVertical="@dimen/_10sdp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/repost_text"/>
+
+                                <Button
+                                    android:visibility="gone"
+                                    android:id="@+id/repost_view"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/spacing_medium"
+                                    android:text="@string/action_view_repost"
+                                    app:layout_constraintTop_toBottomOf="@+id/repost_image"/>
+
+
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:descendantFocusability="blocksDescendants"
+                                android:id="@+id/repost_delete"
+                                android:clickable="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:background="@color/overlay_dark_40"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical"
+                                android:padding="@dimen/spacing_xmedium"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <ImageView
+                                    android:id="@+id/repost_delete_image"
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:layout_marginRight="@dimen/spacing_small"
+                                    android:scaleType="centerCrop"
+                                    android:background="@drawable/ic_clear"
+                                    app:tint="@color/white" />
+
+                            </LinearLayout>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grey_10"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_15sdp"
+            >
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvAdd"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:text="@string/add"-->
+<!--                style="@style/TVSemiBold"-->
+<!--                android:layout_marginHorizontal="@dimen/_12sdp"-->
+<!--                android:textSize="@dimen/_12sdp"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                />-->
+
+<!--            <com.balysv.materialripple.MaterialRippleLayout-->
+<!--                style="@style/RippleStyleBlack"-->
+<!--                android:id="@+id/rlPhoto"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_height="match_parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tvAdd"-->
+<!--                >-->
+<!--                <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    >-->
+<!--                    <ImageView-->
+<!--                        android:id="@+id/ivAddPhoto"-->
+<!--                        android:layout_width="@dimen/_32sdp"-->
+<!--                        android:layout_height="@dimen/_32sdp"-->
+<!--                        android:src="@drawable/ic_add_photo_video"-->
+<!--                        android:layout_marginVertical="@dimen/_8sdp"-->
+<!--                        android:layout_marginHorizontal="@dimen/_12sdp"-->
+<!--                        app:layout_constraintStart_toStartOf="parent"-->
+<!--                        app:layout_constraintTop_toTopOf="parent"-->
+<!--                        />-->
+
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvAddPhoto"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:gravity="center_vertical"-->
+<!--                        android:text="@string/label_photos"-->
+<!--                        style="@style/TVRegular"-->
+<!--                        android:layout_marginVertical="@dimen/_8sdp"-->
+<!--                        android:layout_marginHorizontal="@dimen/_12sdp"-->
+<!--                        android:textSize="@dimen/_12sdp"-->
+<!--                        app:layout_constraintStart_toEndOf="@+id/ivAddPhoto"-->
+<!--                        app:layout_constraintTop_toTopOf="@+id/ivAddPhoto"-->
+<!--                        app:layout_constraintBottom_toBottomOf="@+id/ivAddPhoto"-->
+<!--                        />-->
+<!--                </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--            </com.balysv.materialripple.MaterialRippleLayout>-->
+
+<!--            <com.balysv.materialripple.MaterialRippleLayout-->
+<!--                style="@style/RippleStyleBlack"-->
+<!--                android:id="@+id/rlVideo"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_height="match_parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/rlPhoto"-->
+<!--                >-->
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                >-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/ivAddVideo"-->
+<!--                android:layout_width="@dimen/_32sdp"-->
+<!--                android:layout_height="@dimen/_32sdp"-->
+<!--                android:src="@drawable/ic_add_photo_video"-->
+<!--                android:layout_marginVertical="@dimen/_8sdp"-->
+<!--                android:layout_marginHorizontal="@dimen/_12sdp"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvAddVideo"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:text="@string/label_videos"-->
+<!--                style="@style/TVRegular"-->
+<!--                android:layout_marginHorizontal="@dimen/_12sdp"-->
+<!--                android:layout_marginVertical="@dimen/_8sdp"-->
+<!--                android:textSize="@dimen/_12sdp"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/ivAddVideo"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/ivAddVideo"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/ivAddVideo"-->
+<!--                />-->
+
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--            </com.balysv.materialripple.MaterialRippleLayout>-->
+
+
+<!--            <com.balysv.materialripple.MaterialRippleLayout-->
+<!--                style="@style/RippleStyleBlack"-->
+<!--                android:id="@+id/rlFeeling"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_height="match_parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/rlVideo"-->
+<!--                >-->
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                >-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/ivFeelings"-->
+<!--                android:layout_width="@dimen/_32sdp"-->
+<!--                android:layout_height="@dimen/_32sdp"-->
+<!--                android:src="@drawable/ic_add_feeling"-->
+<!--                android:layout_marginVertical="@dimen/_8sdp"-->
+<!--                android:layout_marginHorizontal="@dimen/_12sdp"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvAddFeelings"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:text="@string/label_feeling"-->
+<!--                style="@style/TVRegular"-->
+<!--                android:layout_marginVertical="@dimen/_8sdp"-->
+<!--                android:layout_marginHorizontal="@dimen/_12sdp"-->
+<!--                android:textSize="@dimen/_12sdp"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/ivFeelings"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/ivFeelings"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/ivFeelings"-->
+<!--                />-->
+
+
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--            </com.balysv.materialripple.MaterialRippleLayout>-->
+
+<!--            <com.balysv.materialripple.MaterialRippleLayout-->
+<!--                style="@style/RippleStyleBlack"-->
+<!--                android:id="@+id/rlLocation"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_height="match_parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/rlFeeling"-->
+<!--                >-->
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                >-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/ivLocations"-->
+<!--                android:layout_width="@dimen/_32sdp"-->
+<!--                android:layout_height="@dimen/_32sdp"-->
+<!--                android:src="@drawable/ic_location"-->
+<!--                android:layout_marginVertical="@dimen/_8sdp"-->
+<!--                android:layout_marginHorizontal="@dimen/_12sdp"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvAddLocation"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:text="@string/placeholder_location"-->
+<!--                style="@style/TVRegular"-->
+<!--                android:layout_marginVertical="@dimen/_8sdp"-->
+<!--                android:layout_marginHorizontal="@dimen/_12sdp"-->
+<!--                android:textSize="@dimen/_12sdp"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/ivLocations"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/ivLocations"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/ivLocations"-->
+<!--                />-->
+
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--            </com.balysv.materialripple.MaterialRippleLayout>-->
+
+            <LinearLayout
+                android:id="@+id/access_mode_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:clickable="true"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:gravity="center_vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/access_mode_image"-->
+<!--                    android:layout_width="@dimen/_12sdp"-->
+<!--                    android:layout_height="@dimen/_12sdp"-->
+<!--                    app:srcCompat="@drawable/ic_unlock"-->
+<!--                    app:tint="@color/textColor" />-->
+
+                <View
+                    android:layout_width="@dimen/spacing_medium"
+                    android:layout_height="0dp" />
+
+                <TextView
+                    android:id="@+id/access_mode_label"
+                    style="@style/TVRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/_11sdp"
+                    android:text="Anyone can reply"
+                    android:textColor="@color/textColor" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvPost"
+                style="@style/TVMeadium"
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:background="@drawable/bg_grey"
+                android:gravity="center"
+                android:text="@string/post"
+                android:textColor="@color/textColor"
+                app:layout_constraintBottom_toBottomOf="@+id/access_mode_layout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/access_mode_layout" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <!--bottom sheet container-->
+    <FrameLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/bottom_sheet_behavior" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

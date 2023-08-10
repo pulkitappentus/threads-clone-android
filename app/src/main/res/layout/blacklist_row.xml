@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:background="@drawable/def_list_row_selector">
+
+    <!-- Thumbnail Image -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/blockedUser"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/profile_default_photo"
+            app:civ_border="true"
+            app:civ_border_color="@color/gray_bg"
+            app:civ_border_width="1dp"
+            app:civ_shadow="false"
+            app:civ_shadow_radius="0" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/blockedUserFullname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User Fullname"
+                    android:textSize="@dimen/_12ssp"
+                    android:singleLine="true"
+                    android:drawableRight="@drawable/profile_verify_icon"
+                    android:drawablePadding="5dp"
+                    style="@style/TVSemiBold"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reason"
+                    style="@style/TVRegular"
+                    android:id="@+id/blockedReason"
+                    android:layout_marginBottom="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="16.07.1997"
+                    android:id="@+id/blockedTimeAgo"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    style="@style/TVRegular"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+
+            <Button
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/bg_grey"
+                    android:backgroundTint="@color/buttonColor"
+                    android:text="@string/action_unblock"
+                    android:layout_gravity="center_vertical"
+                    android:textAllCaps="false"
+                    android:id="@+id/blockedAction" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Person Full name -->
+
+    <!-- Status -->
+
+</LinearLayout>

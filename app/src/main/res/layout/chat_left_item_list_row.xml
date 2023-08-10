@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:emojicon="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/blogs_list_row_selector"
+    android:padding="10dp">
+
+    <!-- Thumbnail Image -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/leftItem">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:focusableInTouchMode="false" >
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:id="@+id/left_fromUser"
+                android:src="@drawable/profile_default_photo"
+                android:minHeight="16dp"
+                android:minWidth="16dp"
+                android:layout_marginRight="10dp"
+                app:civ_border="true"
+                app:civ_border_color="@color/gray_bg"
+                app:civ_border_width="1dp"
+                app:civ_shadow="false"
+                app:civ_shadow_radius="0" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <com.app.threads.view.ResizableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/left_img"
+                        android:src="@drawable/img_loading"
+                        android:adjustViewBounds="true"
+                        android:maxHeight="480dp" />
+
+                    <github.ankushsachdeva.emojicon.EmojiconTextView
+                        android:id="@+id/left_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="false"
+                        android:textSize="16dp"
+                        emojicon:emojiconSize="24dp"
+                        android:textStyle="normal"
+                        style="@style/TVRegular"
+                        android:padding="@dimen/_10sdp"
+                        android:background="@drawable/bg_other_message"
+                        android:text="Example message"
+                        android:layout_marginTop="3dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/divider"
+                    android:layout_weight="0" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="52dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4m ago"
+                android:id="@+id/left_timeAgo"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/textColor"
+               style="@style/TVRegular"
+                android:textSize="@dimen/_8ssp"
+                android:singleLine="true" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rightItem" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom" >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView3"
+                    android:layout_weight="0" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right" >
+
+                    <com.app.threads.view.ResizableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/right_img"
+                        android:src="@drawable/img_loading"
+                        android:adjustViewBounds="true"
+                        android:maxHeight="480dp" />
+
+                    <github.ankushsachdeva.emojicon.EmojiconTextView
+                        android:id="@+id/right_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="false"
+                        android:textSize="16dp"
+                        emojicon:emojiconSize="24dp"
+                        android:textStyle="normal"
+                        android:textColor="@color/white"
+                        android:padding="@dimen/_10sdp"
+                        style="@style/TVRegular"
+                        android:background="@drawable/bg_my_message"
+                        android:text="Example message"
+                        android:layout_marginTop="3dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:id="@+id/right_fromUser"
+                android:src="@drawable/profile_default_photo"
+                android:minHeight="16dp"
+                android:minWidth="16dp"
+                android:layout_marginLeft="10dp"
+                app:civ_border="true"
+                app:civ_border_color="@color/gray_bg"
+                app:civ_border_width="1dp"
+                app:civ_shadow="false"
+                app:civ_shadow_radius="0" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4m ago"
+                android:id="@+id/right_timeAgo"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/textColor"
+                style="@style/TVRegular"
+                android:textSize="@dimen/_8ssp"
+                android:singleLine="true" />
+
+            <ImageView
+                android:src="@drawable/ic_seen"
+                android:id="@+id/seenIcon"
+                android:layout_marginLeft="8dp"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                app:tint="@color/dark_blue" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Person Full name -->
+
+    <!-- Status -->
+
+</LinearLayout>

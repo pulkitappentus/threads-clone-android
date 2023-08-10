@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/spacing_medium"
+    android:paddingTop="@dimen/spacing_medium">
+
+    <ImageView
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_4sdp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_line"
+        android:layout_marginVertical="@dimen/_16sdp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_btn_dialog"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:orientation="vertical">
+        <com.balysv.materialripple.MaterialRippleLayout
+            style="@style/RippleStyleBlack"
+            android:id="@+id/edit_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_42sdp"
+            android:paddingLeft="@dimen/spacing_middle"
+            android:paddingRight="@dimen/spacing_middle">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:text="@string/action_edit"
+                    android:textSize="@dimen/_12sdp"
+                    style="@style/TVMeadium" />
+                <ImageView
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    app:srcCompat="@drawable/ic_edits"
+                    android:layout_gravity="end|center"
+                    android:layout_marginHorizontal="@dimen/_18sdp"
+                    android:backgroundTint="@color/profile_action_icon_tint" />
+
+
+
+            </FrameLayout>
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#1AA4A4A4"/>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            style="@style/RippleStyleBlack"
+            android:id="@+id/delete_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_42sdp"
+            android:paddingLeft="@dimen/spacing_middle"
+            android:paddingRight="@dimen/spacing_middle">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_gravity="end|center"
+                    app:srcCompat="@drawable/ic_delete_post"
+                    android:layout_marginHorizontal="@dimen/_18sdp"
+                    android:backgroundTint="@color/profile_action_icon_tint"
+                    app:tint="@color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:text="@string/action_remove"
+                    style="@style/TVMeadium"
+                    android:textSize="@dimen/_12sdp"
+                    />
+
+            </FrameLayout>
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <View
+            android:id="@+id/upShare"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#1AA4A4A4"/>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            style="@style/RippleStyleBlack"
+            android:id="@+id/share_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_42sdp"
+            android:paddingLeft="@dimen/spacing_middle"
+            android:paddingRight="@dimen/spacing_middle">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_gravity="end|center"
+                    app:srcCompat="@drawable/post_share"
+                    android:layout_marginHorizontal="@dimen/_18sdp"
+                    android:backgroundTint="@color/profile_action_icon_tint"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:text="@string/action_share"
+                    style="@style/TVMeadium"
+                    android:textSize="@dimen/_12sdp"
+                    />
+
+            </FrameLayout>
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <View
+            android:id="@+id/downShare"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#1AA4A4A4"/>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            style="@style/RippleStyleBlack"
+            android:id="@+id/repost_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_42sdp"
+            android:paddingLeft="@dimen/spacing_middle"
+            android:paddingRight="@dimen/spacing_middle">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_gravity="end|center"
+                    app:srcCompat="@drawable/ic_reposts"
+                    android:layout_marginHorizontal="@dimen/_18sdp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:text="@string/action_repost"
+                    style="@style/TVMeadium"
+                    android:textSize="@dimen/_12sdp"
+                    />
+
+            </FrameLayout>
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#1AA4A4A4"/>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            style="@style/RippleStyleBlack"
+            android:id="@+id/report_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_42sdp"
+            android:paddingLeft="@dimen/spacing_middle"
+            android:paddingRight="@dimen/spacing_middle">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_gravity="end|center"
+                    android:layout_marginHorizontal="@dimen/_18sdp"
+                    app:srcCompat="@drawable/post_report" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:text="@string/action_report"
+                    android:textSize="@dimen/_12sdp"
+                    style="@style/TVMeadium"
+                    />
+
+            </FrameLayout>
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_btn_dialog"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:orientation="vertical">
+        <com.balysv.materialripple.MaterialRippleLayout
+            style="@style/RippleStyleBlack"
+            android:id="@+id/copy_url_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_42sdp"
+            android:paddingLeft="@dimen/spacing_middle"
+            android:paddingRight="@dimen/spacing_middle">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_gravity="end|center"
+                    android:layout_marginHorizontal="@dimen/_18sdp"
+                    app:srcCompat="@drawable/ic_copy_link" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/action_copy_url"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_gravity="start|center"
+                    style="@style/TVMeadium"
+                    android:textSize="@dimen/_12sdp"
+                    />
+
+            </FrameLayout>
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:visibility="gone"
+            style="@style/RippleStyleBlack"
+            android:id="@+id/open_url_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_42sdp"
+            android:paddingLeft="@dimen/spacing_middle"
+            android:paddingRight="@dimen/spacing_middle">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_marginHorizontal="@dimen/_18sdp"
+                    android:layout_gravity="end|center"
+                    app:srcCompat="@drawable/ic_web" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/action_open_url"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_gravity="start|center"
+                    style="@style/TVMeadium"
+                    android:textSize="@dimen/_12sdp"
+                    />
+
+            </FrameLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

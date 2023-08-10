@@ -1,0 +1,215 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="?actionBarSize"
+    android:fitsSystemWindows="true"
+    tools:context="com.app.threads.NewGroupFragment"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:src="@drawable/ic_back"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            style="@style/TVBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_6sdp"
+            android:text="@string/new_community"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_18sdp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2"
+        android:background="#fff">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_group_category"
+                android:id="@+id/textView4"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/groupCategory"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:id="@+id/tvName"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:inputType="textPersonName"
+                android:hint="@string/label_group_name"
+                android:ems="10"
+                android:id="@+id/groupFullname"
+                android:maxLength="55"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_12sdp"
+                android:background="@drawable/bg_edit_text"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_group_link"
+                android:id="@+id/tvCommunityLink"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:inputType="textPersonName"
+                android:hint="@string/label_group_link"
+                android:ems="10"
+                android:id="@+id/groupUsername"
+                android:maxLength="255"
+                android:textSize="@dimen/_14sdp"
+                android:padding="@dimen/_10sdp"
+                android:background="@drawable/bg_edit_text"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_group_website"
+                android:id="@+id/tvWebsite"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:inputType="textPersonName"
+                android:hint="@string/label_group_website"
+                android:ems="10"
+                android:id="@+id/groupWebsite"
+                android:maxLength="255"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_12sdp"
+                android:background="@drawable/bg_edit_text"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_group_location"
+                android:id="@+id/label_group_location"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:hint="@string/label_group_location"
+                android:id="@+id/groupLocation"
+                android:maxLength="255"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_12sdp"
+                android:background="@drawable/bg_edit_text"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_group_desc"
+                android:id="@+id/label_group_desc"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:hint="@string/label_group_desc"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:maxLength="255"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_12sdp"
+                android:background="@drawable/bg_edit_text"
+                android:id="@+id/groupDesc"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_group_founded"
+                android:id="@+id/groupFounded"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_white"
+                android:textColor="@color/dark_blue" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_group_allow_posts"
+                android:id="@+id/groupAllowPosts"
+                android:layout_marginTop="10dp"
+                android:scaleX="1"
+                android:scaleY="1"
+                android:checked="false" />
+
+            <CheckBox
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_group_allow_comments"
+                android:id="@+id/groupAllowComments"
+                android:layout_marginTop="10dp"
+                android:checked="true" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/action_create_group"
+                android:id="@+id/groupCreate"
+                android:layout_marginTop="30dp"
+                android:textAllCaps="false"
+                android:background="@drawable/bg_gredient"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

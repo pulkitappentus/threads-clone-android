@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "452252135577",
+    "project_id": "threads-clone-a0c8d",
+    "storage_bucket": "threads-clone-a0c8d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452252135577:android:aa712091a5c704d06d8808",
+        "android_client_info": {
+          "package_name": "com.app.threads"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "452252135577-50go9l9mdbkbo5bv3s79mgno68danepa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.threads",
+            "certificate_hash": "b81bd4d77c04b7a8940decf1d4deb97ce18fc8f2"
+          }
+        },
+        {
+          "client_id": "452252135577-m25g2gdvmn5njgnemhipovjn3noj4uk4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBivurpm-MLNrj1znJtflilvjKJsmUEGjo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "452252135577-m25g2gdvmn5njgnemhipovjn3noj4uk4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

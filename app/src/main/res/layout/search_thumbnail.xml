@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/parent"
+        style="@style/MyRippleStyleLight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginVertical="@dimen/_6sdp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/profileImg"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_margin="@dimen/spacing_medium"
+                android:src="@drawable/profile_default_photo"
+                app:civ_border="true"
+                app:civ_border_color="@color/gray_bg"
+                app:civ_border_width="1dp"
+                app:civ_shadow="false"
+                app:civ_shadow_radius="0"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                app:layout_constraintStart_toEndOf="@+id/profileImg"
+                app:layout_constraintTop_toTopOf="@+id/profileImg">
+
+                <TextView
+                    android:id="@+id/profileFullname"
+                    style="@style/TVMeadium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Fullname"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/profileIcon"
+                    android:layout_width="18px"
+                    android:layout_height="18px"
+                    android:layout_marginHorizontal="@dimen/_3sdp"
+                    android:src="@drawable/ic_verified"
+                    app:layout_constraintBottom_toBottomOf="@+id/profileFullname"
+                    app:layout_constraintStart_toEndOf="@+id/profileFullname"
+                    app:layout_constraintTop_toTopOf="@+id/profileFullname" />
+
+                <TextView
+                    android:id="@+id/tag"
+                    style="@style/TVRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/spacing_small"
+                    android:maxLines="1"
+                    android:textColor="@color/textColor"
+                    android:text="Emotionally Perfect"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profileFullname" />
+
+                <TextView
+                    android:id="@+id/profileUsername"
+                    style="@style/TVMeadium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/spacing_small"
+                    android:maxLines="1"
+                    android:text="Username"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tag" />
+
+                <ImageView
+                    android:id="@+id/profileOnlineIcon"
+                    android:layout_width="15px"
+                    android:layout_height="15px"
+                    android:layout_marginHorizontal="@dimen/_3sdp"
+                    android:src="@drawable/ic_online"
+                    app:layout_constraintBottom_toBottomOf="@+id/profileUsername"
+                    app:layout_constraintStart_toEndOf="@+id/profileUsername"
+                    app:layout_constraintTop_toTopOf="@+id/profileUsername"
+                    app:tint="@color/green" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <ProgressBar
+                style="?android:attr/progressBarStyle"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/_44sdp"
+                android:id="@+id/progressBar"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <FrameLayout
+                android:visibility="gone"
+                android:id="@+id/llAdd"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@drawable/bg_gredient"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvAdd"
+                    android:text="@string/add"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    style="@style/TVRegular"
+                    android:textColor="@color/white"
+                    />
+
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.balysv.materialripple.MaterialRippleLayout>
+</LinearLayout>

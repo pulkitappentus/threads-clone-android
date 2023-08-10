@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_action_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="vertical"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/createProfile"
+                style="@style/TVSemiBold"
+                android:textSize="@dimen/_20ssp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivImageChoose"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:src="@drawable/ic_camera_choose"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_gravity="center_horizontal" />
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:visibility="gone"
+                android:id="@+id/photo_image"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:src="@drawable/ic_camera_choose"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_gravity="center_horizontal"
+                app:civ_border="true"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="3dp"
+                app:civ_shadow="false"
+                app:civ_shadow_radius="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Date_of_Birth"
+                style="@style/TVRegular"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <EditText
+                android:id="@+id/etDateBirth"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:paddingHorizontal="@dimen/_10ssp"
+                android:layout_marginTop="@dimen/_10sdp"
+                style="@style/ETRegular"
+                android:inputType="date"
+                android:background="@drawable/button_white"
+                android:hint="DD/MM/YYYY" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gender"
+                style="@style/TVRegular"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnMale"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_weight="1"
+                    android:text="@string/male"
+                    style="@style/TVRegular"
+                    android:textAllCaps="false"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:background="@drawable/bg_grey"
+                    />
+
+                <Button
+                    android:id="@+id/btnFemale"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_weight="1"
+                    android:text="@string/female"
+                    style="@style/TVRegular"
+                    android:textAllCaps="false"
+                    android:background="@drawable/bg_grey"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp" />
+
+                <Button
+                    android:id="@+id/btnOther"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_weight="1"
+                    android:text="@string/other"
+                    style="@style/TVRegular"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:background="@drawable/bg_grey"
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/action_finish"
+                android:id="@+id/btnFinish"
+                style="@style/TVSemiBold"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_12ssp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="100dp"
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="@dimen/_25sdp"
+                android:background="@drawable/bg_gredient"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

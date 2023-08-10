@@ -1,0 +1,218 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:context="com.app.threads.BalanceActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_action_bar"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingHorizontal="20dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_credits"
+                    android:id="@+id/labelCredits"
+                    style="@style/TVMeadium"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_credits_desc"
+                    android:id="@+id/labelCreditsDesc"
+                    android:layout_marginTop="8dp"
+                    style="@style/TVRegular"
+                    />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/postSeparatorLine"
+                    android:id="@+id/linearLayout7"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:id="@+id/iap1_google_btn"
+                android:background="@drawable/button_white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvCreditOne"
+                    android:text="@string/creditOne"
+                  style="@style/TVRegular"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_gravity="center_horizontal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/tvCreditOneAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$1.00"
+                 style="@style/TVSemiBold"
+                    android:textSize="@dimen/_18sdp"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_gravity="center_horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:id="@+id/iap2_google_btn"
+                android:layout_marginVertical="@dimen/_15sdp"
+                android:background="@drawable/button_white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvCreditTwo"
+                    android:text="@string/creditTwo"
+                    style="@style/TVRegular"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_gravity="center_horizontal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/tvCreditTwoAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$2.00"
+                    style="@style/TVSemiBold"
+                    android:textSize="@dimen/_18sdp"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_gravity="center_horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:id="@+id/iap3_google_btn"
+                android:layout_marginVertical="@dimen/_15sdp"
+                android:background="@drawable/button_white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvCreditThree"
+                    android:text="@string/creditThree"
+                    style="@style/TVRegular"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_gravity="center_horizontal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/tvCreditThreeAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$3.00"
+                    style="@style/TVSemiBold"
+                    android:textSize="@dimen/_18sdp"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_gravity="center_horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <Button
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/iap4_google_btn"
+                android:text="Test Google Pay"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/white"
+                android:background="@drawable/button_primary"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:id="@+id/rewarded_ad_btn"
+                android:layout_marginVertical="@dimen/_15sdp"
+                android:background="@drawable/button_white">
+
+
+                <TextView
+                    android:id="@+id/tvAds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/action_view_rewarded_video_ad"
+                    style="@style/TVRegular"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_gravity="center_horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:text="@string/action_buy"
+                android:background="@drawable/bg_gredient"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
