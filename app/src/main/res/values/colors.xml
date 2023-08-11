@@ -101,6 +101,7 @@
     <color name="grey_medium">#BDBFC1</color>
     <color name="grey_soft">#d9d9d9</color>
     <color name="grey_bg">#F7F7F7</color>
+    <color name="view_border">#767676</color>
     <color name="grey_dark">#262626</color>
 
     <color name="overlay_dark_10">#1A000000</color>

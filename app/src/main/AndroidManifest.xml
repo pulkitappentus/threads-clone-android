@@ -26,6 +26,9 @@
         android:theme="@style/Theme.social"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".SeetingsActivity"
+            android:exported="false" />
+        <activity
             android:name=".MenuActivity"
             android:exported="false" />
         <activity android:name=".SelectFeelingActivity" /> <!-- AdMob App ID -->
