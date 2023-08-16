@@ -70,7 +70,7 @@
                 android:layout_height="@dimen/_12sdp"
                 android:layout_gravity="center"
                 android:layout_marginStart="@dimen/_12sdp"
-                android:src="@drawable/notification_ii"/>
+                android:src="@drawable/ic_notificationssss"/>
 
             <TextView
                 style="@style/TVMeadium"
@@ -99,7 +99,7 @@
                 android:layout_height="@dimen/_12sdp"
                 android:layout_gravity="center"
                 android:layout_marginStart="@dimen/_12sdp"
-                android:src="@drawable/notification_ii"/>
+                android:src="@drawable/ic_like_unselect"/>
 
             <TextView
                 style="@style/TVMeadium"
@@ -128,7 +128,7 @@
                 android:layout_height="@dimen/_12sdp"
                 android:layout_gravity="center"
                 android:layout_marginStart="@dimen/_12sdp"
-                android:src="@drawable/notification_ii"/>
+                android:src="@drawable/privacy_icon"/>
 
             <TextView
                 style="@style/TVMeadium"
@@ -157,7 +157,7 @@
                 android:layout_height="@dimen/_12sdp"
                 android:layout_gravity="center"
                 android:layout_marginStart="@dimen/_12sdp"
-                android:src="@drawable/notification_ii"/>
+                android:src="@drawable/changed_pass"/>
 
             <TextView
                 style="@style/TVMeadium"
@@ -186,7 +186,7 @@
                 android:layout_height="@dimen/_12sdp"
                 android:layout_gravity="center"
                 android:layout_marginStart="@dimen/_12sdp"
-                android:src="@drawable/notification_ii"/>
+                android:src="@drawable/allow_con"/>
 
             <TextView
                 style="@style/TVMeadium"
@@ -215,7 +215,7 @@
                 android:layout_height="@dimen/_12sdp"
                 android:layout_gravity="center"
                 android:layout_marginStart="@dimen/_12sdp"
-                android:src="@drawable/notification_ii"/>
+                android:src="@drawable/deactivate_ic"/>
 
             <TextView
                 style="@style/TVMeadium"
@@ -252,7 +252,7 @@
                 android:layout_height="@dimen/_12sdp"
                 android:layout_gravity="center"
                 android:layout_marginStart="@dimen/_12sdp"
-                android:src="@drawable/notification_ii"/>
+                android:src="@drawable/term_use"/>
 
             <TextView
                 style="@style/TVMeadium"
@@ -281,7 +281,7 @@
                 android:layout_height="@dimen/_12sdp"
                 android:layout_gravity="center"
                 android:layout_marginStart="@dimen/_12sdp"
-                android:src="@drawable/notification_ii"/>
+                android:src="@drawable/ack_ic"/>
 
             <TextView
                 style="@style/TVMeadium"
@@ -318,7 +318,7 @@
                 android:layout_height="@dimen/_12sdp"
                 android:layout_gravity="center"
                 android:layout_marginStart="@dimen/_12sdp"
-                android:src="@drawable/notification_ii"/>
+                android:src="@drawable/logout"/>
 
             <TextView
                 style="@style/TVMeadium"
@@ -347,7 +347,7 @@
                 android:layout_height="@dimen/_12sdp"
                 android:layout_gravity="center"
                 android:layout_marginStart="@dimen/_12sdp"
-                android:src="@drawable/notification_ii"/>
+                android:src="@drawable/contact_us"/>
 
             <TextView
                 style="@style/TVMeadium"

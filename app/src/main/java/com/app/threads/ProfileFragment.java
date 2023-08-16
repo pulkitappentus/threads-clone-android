@@ -443,7 +443,7 @@ public class ProfileFragment extends Fragment implements Constants, SwipeRefresh
         icSetting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getActivity(), MenuActivity.class);
+                Intent i = new Intent(getActivity(), SeetingsActivity.class);
                 startActivity(i);
             }
         });
