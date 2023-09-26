@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.app.threads">
+    package="com.app.threads_clone">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_CORSE_LOCATION" />
@@ -16,8 +16,7 @@
     <uses-feature android:name="android.hardware.location.gps" />
 
     <application
-        android:name=".app.App"
-        android:allowBackup="true"
+        android:name="com.app.threads_clone.app.App"
         android:hardwareAccelerated="true"
         android:icon="@drawable/app_logo"
         android:label="@string/app_name"
@@ -26,12 +25,14 @@
         android:theme="@style/Theme.social"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".SeetingsActivity"
+            android:name="com.app.threads_clone.SeetingsActivity"
             android:exported="false" />
         <activity
-            android:name=".MenuActivity"
+            android:name="com.app.threads_clone.MenuActivity"
             android:exported="false" />
-        <activity android:name=".SelectFeelingActivity" /> <!-- AdMob App ID -->
+        <activity
+            android:exported="false"
+            android:name="com.app.threads_clone.SelectFeelingActivity" /> <!-- AdMob App ID -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="@string/admob_app_id" />
@@ -39,7 +40,6 @@
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.provider"
-            android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
@@ -73,7 +73,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".AppActivity"
+            android:name="com.app.threads_clone.AppActivity"
             android:configChanges="keyboardHidden|orientation"
             android:label="@string/app_name">
 
@@ -85,10 +85,11 @@
             </intent-filter>
             -->
         </activity>
-        <activity
-            android:name="com.google.android.gms.ads.AdActivity"
-            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
-            android:theme="@android:style/Theme.Translucent" />
+<!--        <activity-->
+<!--            android:name="com.google.android.gms.ads.AdActivity"-->
+<!--            android:exported="false"-->
+<!--            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"-->
+<!--            android:theme="@android:style/Theme.Translucent" />-->
 
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
@@ -100,15 +101,17 @@
             android:name="com.google.firebase.messaging.default_notification_channel_id"
             android:value="@string/default_notification_channel_id" />
 
-        <service android:name=".service.MyFcmListenerService">
+        <service android:name="com.app.threads_clone.service.MyFcmListenerService"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
 
         <activity
-            android:name=".SplashActivity"
+            android:name="com.app.threads_clone.SplashActivity"
             android:hardwareAccelerated="false"
+            android:exported="true"
             android:windowSoftInputMode="stateHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -117,222 +120,277 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LoginActivity"
+            android:name="com.app.threads_clone.LoginActivity"
+            android:exported="false"
             android:hardwareAccelerated="false"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".SignupActivity"
+            android:name="com.app.threads_clone.SignupActivity"
             android:label="@string/title_activity_signup"
+            android:exported="false"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.app.threads_clone.MainActivity"
             android:configChanges="orientation"
+            android:exported="false"
             android:label="@string/title_activity_feeds" />
         <activity
-            android:name=".RecoveryActivity"
+            android:name="com.app.threads_clone.RecoveryActivity"
             android:label="@string/title_activity_recovery"
+            android:exported="false"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".SettingsActivity"
+            android:name="com.app.threads_clone.SettingsActivity"
             android:label="@string/title_activity_settings"
+            android:exported="false"
             android:theme="@style/PreferenceScreen" />
         <activity
-            android:name=".WebViewActivity"
+            android:name="com.app.threads_clone.WebViewActivity"
+            android:exported="false"
             android:label="@string/title_activity_web_view" />
         <activity
-            android:name=".ChangePasswordActivity"
+            android:name="com.app.threads_clone.ChangePasswordActivity"
+            android:exported="false"
             android:label="@string/title_activity_change_password"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".ServicesActivity"
+            android:name="com.app.threads_clone.ServicesActivity"
+            android:exported="false"
             android:label="@string/title_activity_services" />
         <activity
-            android:name=".NewItemActivity"
+            android:name="com.app.threads_clone.NewItemActivity"
+            android:exported="false"
             android:label="@string/title_activity_new_item"
             android:windowSoftInputMode="adjustNothing" />
         <activity
-            android:name=".NewGalleryItemActivity"
+            android:name="com.app.threads_clone.NewGalleryItemActivity"
+            android:exported="false"
             android:label="@string/title_activity_new_gallery_item" />
         <activity
-            android:name=".ViewItemActivity"
+            android:name="com.app.threads_clone.ViewItemActivity"
             android:label="@string/title_activity_view_item"
+            android:exported="false"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".ProfileActivity"
+            android:name="com.app.threads_clone.ProfileActivity"
+            android:exported="false"
             android:configChanges="orientation"
             android:label="@string/title_activity_profile" />
         <activity
-            android:name=".SearchActivity"
+            android:name="com.app.threads_clone.SearchActivity"
+            android:exported="false"
             android:label="@string/title_activity_search">
             <meta-data
                 android:name="android.app.searchable"
                 android:resource="@xml/searchable" />
         </activity>
         <activity
-            android:name=".NotificationsActivity"
+            android:name="com.app.threads_clone.NotificationsActivity"
+            android:exported="false"
             android:label="@string/title_activity_notifications" />
         <activity
-            android:name=".PhotoViewActivity"
+            android:name="com.app.threads_clone.PhotoViewActivity"
+            android:exported="false"
             android:label="@string/title_activity_photo_view"
             android:theme="@style/PhotoViewTheme" />
         <activity
-            android:name=".VideoViewActivity"
+            android:name="com.app.threads_clone.VideoViewActivity"
+            android:exported="false"
             android:configChanges="orientation|screenSize|layoutDirection"
             android:label="@string/title_activity_video_view"
             android:theme="@style/PhotoViewTheme" />
         <activity
-            android:name=".HashtagsActivity"
+            android:name="com.app.threads_clone.HashtagsActivity"
+            android:exported="false"
             android:label="@string/title_activity_hashtags" />
         <activity
-            android:name=".FollowersActivity"
+            android:name="com.app.threads_clone.FollowersActivity"
+            android:exported="false"
             android:label="@string/title_activity_followers" />
         <activity
-            android:name=".LikersActivity"
+            android:name="com.app.threads_clone.LikersActivity"
+            android:exported="false"
             android:label="@string/title_activity_likers" />
         <activity
-            android:name=".AccountSettingsActivity"
+            android:name="com.app.threads_clone.AccountSettingsActivity"
+            android:exported="false"
             android:label="@string/title_activity_account_settings"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".BlackListActivity"
+            android:name="com.app.threads_clone.BlackListActivity"
+            android:exported="false"
             android:label="@string/title_activity_black_list" />
         <activity
-            android:name=".DialogsActivity"
+            android:name="com.app.threads_clone.DialogsActivity"
+            android:exported="false"
             android:label="@string/title_activity_dialogs" />
         <activity
-            android:name=".ChatActivity"
+            android:name="com.app.threads_clone.ChatActivity"
             android:label="@string/title_activity_chat"
+            android:exported="false"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".NotificationsSettingsActivity"
+            android:name="com.app.threads_clone.NotificationsSettingsActivity"
+            android:exported="false"
             android:label="@string/title_activity_notifications_settings"
             android:theme="@style/PreferenceScreen" />
         <activity
-            android:name=".PrivacySettingsActivity"
+            android:name="com.app.threads_clone.PrivacySettingsActivity"
             android:label="@string/title_activity_privacy_settings"
+            android:exported="false"
             android:theme="@style/PreferenceScreen" />
         <activity
-            android:name=".FavoritesActivity"
+            android:name="com.app.threads_clone.FavoritesActivity"
             android:label="@string/title_activity_favorites"
+            android:exported="false"
             android:theme="@style/MyMaterialTheme" />
         <activity
-            android:name=".SupportActivity"
+            android:name="com.app.threads_clone.SupportActivity"
             android:label="@string/title_activity_support"
+            android:exported="false"
             android:theme="@style/MyMaterialTheme" />
         <activity
-            android:name=".LocationActivity"
+            android:name="com.app.threads_clone.LocationActivity"
             android:configChanges="keyboardHidden|orientation"
             android:label="@string/title_activity_location"
+            android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/MyMaterialTheme" />
         <activity
-            android:name=".DeactivateActivity"
+            android:name="com.app.threads_clone.DeactivateActivity"
+            android:exported="false"
             android:label="@string/title_activity_deactivate"
             android:theme="@style/MyMaterialTheme" />
         <activity
-            android:name=".GalleryActivity"
+            android:name="com.app.threads_clone.GalleryActivity"
+            android:exported="false"
             android:label="@string/title_activity_gallery"
             android:theme="@style/MyMaterialTheme" />
         <activity
-            android:name=".ViewImageActivity"
+            android:name="com.app.threads_clone.ViewImageActivity"
             android:label="@string/title_activity_view_image"
+            android:exported="false"
             android:theme="@style/MyMaterialTheme" />
         <activity
-            android:name=".ManagedGroupsActivity"
+            android:name="com.app.threads_clone.ManagedGroupsActivity"
             android:label="@string/title_activity_managed_groups"
+            android:exported="false"
             android:theme="@style/MyMaterialTheme" />
         <activity
-            android:name=".NewGroupActivity"
+            android:name="com.app.threads_clone.NewGroupActivity"
             android:label="@string/title_activity_new_group"
+            android:exported="false"
             android:theme="@style/MyMaterialTheme" />
         <activity
-            android:name=".GroupActivity"
+            android:name="com.app.threads_clone.GroupActivity"
             android:label="@string/title_activity_group"
+            android:exported="false"
             android:theme="@style/MyMaterialTheme" />
         <activity
-            android:name=".GroupSettingsActivity"
+            android:name="com.app.threads_clone.GroupSettingsActivity"
             android:label="@string/title_activity_settings"
+            android:exported="false"
             android:theme="@style/MyMaterialTheme" />
         <activity
-            android:name=".GroupSearchActivity"
+            android:name="com.app.threads_clone.GroupSearchActivity"
+            android:exported="false"
             android:label="@string/title_activity_search">
             <meta-data
                 android:name="android.app.searchable"
                 android:resource="@xml/searchable" />
         </activity>
         <activity
-            android:name=".BalanceActivity"
+            android:name="com.app.threads_clone.BalanceActivity"
+            android:exported="false"
             android:label="@string/title_activity_balance"
             android:screenOrientation="portrait"
             android:theme="@style/MyMaterialTheme" />
         <activity
-            android:name=".GiftsActivity"
+            android:name="com.app.threads_clone.GiftsActivity"
+            android:exported="false"
             android:label="@string/title_activity_gifts"
             android:theme="@style/MyMaterialTheme" />
         <activity
-            android:name=".FriendsActivity"
+            android:name="com.app.threads_clone.FriendsActivity"
             android:label="@string/title_activity_friends"
+            android:exported="false"
             android:theme="@style/MyMaterialTheme" />
         <activity
-            android:name=".WelcomeActivity"
+            android:name="com.app.threads_clone.WelcomeActivity"
+            android:exported="false"
             android:label="@string/title_activity_welcome" />
         <activity
-            android:name=".ReferralsActivity"
+            android:name="com.app.threads_clone.ReferralsActivity"
+            android:exported="false"
             android:label="@string/title_activity_referrals"
             android:theme="@style/MyMaterialTheme" />
         <activity
-            android:name=".MarketNewItemActivity"
+            android:name="com.app.threads_clone.MarketNewItemActivity"
+            android:exported="false"
             android:label="@string/title_activity_market_new_item"
             android:theme="@style/MyMaterialTheme" />
         <activity
-            android:name=".MarketViewItemActivity"
+            android:name="com.app.threads_clone.MarketViewItemActivity"
+            android:exported="false"
             android:label="@string/title_activity_market_view_item"
             android:theme="@style/MyMaterialTheme" />
         <activity
-            android:name=".MarketMyItemsActivity"
+            android:name="com.app.threads_clone.MarketMyItemsActivity"
+            android:exported="false"
             android:label="@string/title_activity_market_my_items"
             android:theme="@style/MyMaterialTheme" />
         <activity
-            android:name=".ViewYouTubeVideoActivity"
+            android:name="com.app.threads_clone.ViewYouTubeVideoActivity"
+            android:exported="false"
             android:label="@string/title_activity_view_youtube_video"
             android:theme="@style/MyMaterialTheme" />
         <activity
-            android:name=".MarketActivity"
+            android:name="com.app.threads_clone.MarketActivity"
+            android:exported="false"
             android:label="@string/title_activity_market"
             android:theme="@style/MyMaterialTheme" />
         <activity
-            android:name=".StreamActivity"
+            android:name="com.app.threads_clone.StreamActivity"
+            android:exported="false"
             android:label="@string/title_activity_stream"
             android:theme="@style/MyMaterialTheme" />
         <activity
-            android:name=".GuestsActivity"
+            android:name="com.app.threads_clone.GuestsActivity"
+            android:exported="false"
             android:label="@string/title_activity_guests"
             android:theme="@style/MyMaterialTheme" />
         <activity
-            android:name=".GroupsActivity"
+            android:name="com.app.threads_clone.GroupsActivity"
+            android:exported="false"
             android:label="@string/title_activity_groups"
             android:theme="@style/MyMaterialTheme" />
         <activity
-            android:name=".NearbyActivity"
+            android:name="com.app.threads_clone.NearbyActivity"
+            android:exported="false"
             android:label="@string/title_activity_nearby"
             android:theme="@style/MyMaterialTheme" />
         <activity
-            android:name=".UpgradesActivity"
+            android:name="com.app.threads_clone.UpgradesActivity"
+            android:exported="false"
             android:label="@string/title_activity_upgrades"
             android:theme="@style/MyMaterialTheme" />
         <activity
-            android:name=".PopularActivity"
+            android:name="com.app.threads_clone.PopularActivity"
+            android:exported="false"
             android:label="@string/title_activity_popular"
             android:theme="@style/MyMaterialTheme" />
         <activity
-            android:name=".RegisterActivity"
+            android:name="com.app.threads_clone.RegisterActivity"
+            android:exported="false"
             android:label="@string/title_activity_signup" />
-        <activity android:name=".MediaViewerActivity" />
+        <activity android:name="com.app.threads_clone.MediaViewerActivity" />
         <activity
-            android:name=".BalanceHistoryActivity"
+            android:name="com.app.threads_clone.BalanceHistoryActivity"
+            android:exported="false"
             android:label="@string/title_activity_balance_history" />
         <activity
-            android:name=".RecentlyDeletedActivity"
+            android:name="com.app.threads_clone.RecentlyDeletedActivity"
+            android:exported="false"
             android:label="@string/title_activity_recently_deleted"
             android:theme="@style/MyMaterialTheme" />
     </application>

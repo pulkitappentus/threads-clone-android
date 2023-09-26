@@ -12,6 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fitsSystemWindows="true"
         android:paddingVertical="@dimen/_12sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,6 +64,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
+            android:id="@+id/llPushNotification"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_42sdp"
             android:orientation="horizontal">
@@ -86,11 +89,14 @@
                 app:layout_constraintTop_toTopOf="parent" />
         </LinearLayout>
         <View
+            android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="0.33dp"
             android:background="@color/view_border"/>
 
         <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/llYourLike"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_42sdp"
             android:orientation="horizontal">
@@ -120,6 +126,7 @@
             android:background="@color/view_border"/>
 
         <LinearLayout
+            android:id="@+id/llPrivacy"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_42sdp"
             android:orientation="horizontal">
@@ -149,6 +156,7 @@
             android:background="@color/view_border"/>
 
         <LinearLayout
+            android:id="@+id/llChangePass"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_42sdp"
             android:orientation="horizontal">
@@ -173,11 +181,14 @@
                 app:layout_constraintTop_toTopOf="parent" />
         </LinearLayout>
         <View
+            android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="0.33dp"
             android:background="@color/view_border"/>
 
         <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/llAccessPost"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_42sdp"
             android:orientation="horizontal">
@@ -207,6 +218,7 @@
             android:background="@color/view_border"/>
 
         <LinearLayout
+            android:id="@+id/llDeactiveAccount"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_42sdp"
             android:orientation="horizontal">
@@ -244,6 +256,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
+            android:id="@+id/llTermUse"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_42sdp"
             android:orientation="horizontal">
@@ -268,11 +281,14 @@
                 app:layout_constraintTop_toTopOf="parent" />
         </LinearLayout>
         <View
+            android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="0.33dp"
             android:background="@color/view_border"/>
 
         <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/llAck"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_42sdp"
             android:orientation="horizontal">
@@ -310,6 +326,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
+            android:id="@+id/llLogout"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_42sdp"
             android:orientation="horizontal">
@@ -339,6 +356,7 @@
             android:background="@color/view_border"/>
 
         <LinearLayout
+            android:id="@+id/llContactUs"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_42sdp"
             android:orientation="horizontal">

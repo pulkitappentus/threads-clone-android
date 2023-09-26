@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
-    tools:context="com.app.threads.GalleryActivity" >
+    tools:context="com.app.threads_clone.GalleryActivity" >
 
 
     <FrameLayout

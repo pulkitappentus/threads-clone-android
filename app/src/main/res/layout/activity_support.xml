@@ -5,7 +5,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
   android:background="@color/white"
     android:orientation="vertical"
-    tools:context="com.app.threads.SupportActivity">
+    android:fitsSystemWindows="true"
+    tools:context="com.app.threads_clone.SupportActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/clActionBar"

@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context="com.app.threads.BlackListActivity">
+    tools:context="com.app.threads_clone.BlackListActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/clActionBar"

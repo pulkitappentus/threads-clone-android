@@ -22,7 +22,7 @@ import android.util.AttributeSet;
 import android.view.KeyEvent;
 import android.widget.EditText;
 
-import com.app.threads.R;
+import com.app.threads_clone.R;
 
 /**
  * @author Hieu Rocker (rockerhieu@gmail.com).

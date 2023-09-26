@@ -27,7 +27,7 @@ import java.util.List;
 
 import github.ankushsachdeva.emojicon.EmojiconGridView.OnEmojiconClickedListener;
 import github.ankushsachdeva.emojicon.emoji.Emojicon;
-import com.app.threads.R;
+import com.app.threads_clone.R;
 
 
 /**

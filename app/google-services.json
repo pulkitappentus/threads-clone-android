@@ -1,42 +1,229 @@
 {
   "project_info": {
-    "project_number": "452252135577",
-    "project_id": "threads-clone-a0c8d",
-    "storage_bucket": "threads-clone-a0c8d.appspot.com"
+    "project_number": "129504620701",
+    "project_id": "cuz-fitness",
+    "storage_bucket": "cuz-fitness.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:452252135577:android:aa712091a5c704d06d8808",
+        "mobilesdk_app_id": "1:129504620701:android:469b28c512c31b30596474",
         "android_client_info": {
-          "package_name": "com.app.threads"
+          "package_name": "app.appentus.ssbfitness"
         }
       },
       "oauth_client": [
         {
-          "client_id": "452252135577-50go9l9mdbkbo5bv3s79mgno68danepa.apps.googleusercontent.com",
+          "client_id": "129504620701-4s3mps96f03v8mq4fplv1s1kd93rgenm.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.app.threads",
+            "package_name": "app.appentus.ssbfitness",
             "certificate_hash": "b81bd4d77c04b7a8940decf1d4deb97ce18fc8f2"
           }
         },
         {
-          "client_id": "452252135577-m25g2gdvmn5njgnemhipovjn3noj4uk4.apps.googleusercontent.com",
-          "client_type": 3
+          "client_id": "129504620701-9dnu3qrfmoidoucns2b74pq12oa5fuap.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.appentus.ssbfitness",
+            "certificate_hash": "a0c4c70660abfc3bb168f14aae9639e64632af9d"
+          }
+        },
+        {
+          "client_id": "129504620701-subb75vppa2ul4i6icanps6oit6tlcmj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.appentus.ssbfitness",
+            "certificate_hash": "19b88bfeb721b15d977a7210a72a170373e36277"
+          }
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBivurpm-MLNrj1znJtflilvjKJsmUEGjo"
+          "current_key": "AIzaSyDFmfq6PaFcHmTM6dvyCTtwkuzIB73dnRM"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "452252135577-m25g2gdvmn5njgnemhipovjn3noj4uk4.apps.googleusercontent.com",
+              "client_id": "129504620701-hrf5uqtcu52rrhuurtm0hf3ie667u2un.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "129504620701-6sl76fhdfkc3jbaf4hd9p3796h3jl1nc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.appentus.cuz"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129504620701:android:6ff12c0439f6efd7596474",
+        "android_client_info": {
+          "package_name": "app.strength.training"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "129504620701-0t98kklrlcpl9fq01b2ch0ielghc5mvf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.strength.training",
+            "certificate_hash": "b81bd4d77c04b7a8940decf1d4deb97ce18fc8f2"
+          }
+        },
+        {
+          "client_id": "129504620701-7jlioc6s06pv6muvt2anqv7467jtbpqp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.strength.training",
+            "certificate_hash": "2c5f3452f24f12290dbe89b635454cb276a1d205"
+          }
+        },
+        {
+          "client_id": "129504620701-f2d3mpu0f3utpkrth0qbiptdit5bal8c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.strength.training",
+            "certificate_hash": "56aae74e432f4003966f3ca4d5cc9229ba7e98d1"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFmfq6PaFcHmTM6dvyCTtwkuzIB73dnRM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "129504620701-hrf5uqtcu52rrhuurtm0hf3ie667u2un.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "129504620701-6sl76fhdfkc3jbaf4hd9p3796h3jl1nc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.appentus.cuz"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129504620701:android:2ad049255b1d2494596474",
+        "android_client_info": {
+          "package_name": "com.app.threads_clone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "129504620701-kc77bipklhf5umg4r48fjkq48pms4j0h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.threads_clone",
+            "certificate_hash": "b81bd4d77c04b7a8940decf1d4deb97ce18fc8f2"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFmfq6PaFcHmTM6dvyCTtwkuzIB73dnRM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "129504620701-hrf5uqtcu52rrhuurtm0hf3ie667u2un.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "129504620701-6sl76fhdfkc3jbaf4hd9p3796h3jl1nc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.appentus.cuz"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129504620701:android:d9002f6b1a13188e596474",
+        "android_client_info": {
+          "package_name": "com.appentus.fitnesssb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "129504620701-93q6u0o8koce543v9anpoj6bnm2s4jp6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appentus.fitnesssb",
+            "certificate_hash": "7af2325880d410e132e775d83307a561ea79601a"
+          }
+        },
+        {
+          "client_id": "129504620701-94blpq8k2nt99a1nd8cfd3ecd6958f93.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appentus.fitnesssb",
+            "certificate_hash": "187679eaf9748c37b84d616f3964fbb56e70db6e"
+          }
+        },
+        {
+          "client_id": "129504620701-frvm97l5qm3lpk1e66i3vmjtnbtpim0f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appentus.fitnesssb",
+            "certificate_hash": "551ad28c40b5aa66cd11e95780e7989b1ce6b41b"
+          }
+        },
+        {
+          "client_id": "129504620701-kn0cc1j74sr3d1bkotqnophgrp4j0608.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appentus.fitnesssb",
+            "certificate_hash": "aa6c4941d752c5bb4e75399c3752c43e81a2cc09"
+          }
+        },
+        {
+          "client_id": "129504620701-nkthdj6hodj4bb9g109cf8rufofo6v0n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appentus.fitnesssb",
+            "certificate_hash": "b81bd4d77c04b7a8940decf1d4deb97ce18fc8f2"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFmfq6PaFcHmTM6dvyCTtwkuzIB73dnRM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "129504620701-hrf5uqtcu52rrhuurtm0hf3ie667u2un.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "129504620701-6sl76fhdfkc3jbaf4hd9p3796h3jl1nc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.appentus.cuz"
+              }
             }
           ]
         }

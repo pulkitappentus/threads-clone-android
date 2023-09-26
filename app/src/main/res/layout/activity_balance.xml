@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:background="@color/white"
     android:fitsSystemWindows="true"
-    tools:context="com.app.threads.BalanceActivity">
+    tools:context="com.app.threads_clone.BalanceActivity">
 
     <include
         android:id="@+id/include"

@@ -19,7 +19,7 @@ import android.content.Context;
 import android.text.Spannable;
 import android.util.SparseIntArray;
 
-import com.app.threads.R;
+import com.app.threads_clone.R;
 
 /**
  * @author Hieu Rocker (rockerhieu@gmail.com)

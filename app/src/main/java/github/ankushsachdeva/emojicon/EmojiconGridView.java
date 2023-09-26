@@ -26,7 +26,7 @@ import java.util.Arrays;
 
 import github.ankushsachdeva.emojicon.emoji.Emojicon;
 import github.ankushsachdeva.emojicon.emoji.People;
-import com.app.threads.R;
+import com.app.threads_clone.R;
 
 /**
  * @author Hieu Rocker (rockerhieu@gmail.com)

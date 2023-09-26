@@ -7,7 +7,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@color/white"
-    tools:context="com.app.threads.PeopleNearbyFragment">
+    tools:context="com.app.threads_clone.PeopleNearbyFragment">
 
     <LinearLayout
         android:orientation="vertical"

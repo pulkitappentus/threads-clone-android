@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:fitsSystemWindows="true"
     android:background="@color/white"
-    tools:context="com.app.threads.DialogsActivity" >
+    tools:context="com.app.threads_clone.DialogsActivity" >
 
     <FrameLayout
         android:id="@+id/container_body"

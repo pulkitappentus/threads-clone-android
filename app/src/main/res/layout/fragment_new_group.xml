@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:layout_marginBottom="?actionBarSize"
     android:fitsSystemWindows="true"
-    tools:context="com.app.threads.NewGroupFragment"
+    tools:context="com.app.threads_clone.NewGroupFragment"
     android:background="#fff">
 
     <LinearLayout
