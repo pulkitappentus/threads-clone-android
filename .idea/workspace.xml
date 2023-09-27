@@ -15,271 +15,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="904e2dbc-1275-49d4-a3bd-ed4adbe09c7a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/release/app-release.aab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/SeetingsActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/thread_jks/thread.jks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/ic_launcher-playstore.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/google-services.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/release/app-release.aab" beforeDir="false" afterPath="$PROJECT_DIR$/app/release/app-release.aab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/AccountSettingsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/AccountSettingsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/AccountSettingsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/AccountSettingsFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/AppActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/AppActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/BalanceActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/BalanceActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/BalanceHistoryActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/BalanceHistoryActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/BalanceHistoryFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/BalanceHistoryFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/BlackListActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/BlackListActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/BlackListFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/BlackListFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/ChangePasswordActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/ChangePasswordActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/ChangePasswordFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/ChangePasswordFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/ChatActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/ChatActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/ChatFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/ChatFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/CommunityFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/CommunityFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/DeactivateActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/DeactivateActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/DeactivateFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/DeactivateFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/DialogsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/DialogsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/DialogsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/DialogsFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/FavoritesActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/FavoritesActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/FavoritesFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/FavoritesFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/FeedFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/FeedFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/FollowersActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/FollowersActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/FragmentDrawer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/FragmentDrawer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/FriendsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/FriendsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/FriendsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/FriendsFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/GalleryActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/GalleryActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/GalleryFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/GalleryFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/GiftsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/GiftsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/GiftsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/GiftsFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/GroupActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/GroupActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/GroupSearchActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/GroupSearchActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/GroupSettingsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/GroupSettingsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/GroupSettingsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/GroupSettingsFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/GroupsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/GroupsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/GroupsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/GroupsFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/GuestsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/GuestsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/GuestsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/GuestsFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/HashtagsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/HashtagsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/HashtagsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/HashtagsFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/LikersActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/LikersActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/LikersFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/LikersFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/LocationActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/LocationActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/LocationFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/LocationFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/LoginActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/LoginFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/LoginFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/ManagedGroupsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/ManagedGroupsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/ManagedGroupsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/ManagedGroupsFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/MarketActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/MarketActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/MarketFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/MarketFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/MarketMyItemsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/MarketMyItemsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/MarketMyItemsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/MarketMyItemsFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/MarketNewItemActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/MarketNewItemActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/MarketNewItemFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/MarketNewItemFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/MarketViewItemActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/MarketViewItemActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/MarketViewItemFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/MarketViewItemFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/MediaViewerActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/MediaViewerActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/MenuActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/MenuActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/MenuFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/MenuFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/NearbyActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/NearbyActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/NewGalleryItemActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/NewGalleryItemActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/NewGalleryItemFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/NewGalleryItemFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/NewGroupActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/NewGroupActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/NewGroupFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/NewGroupFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/NewItemActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/NewItemActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/NewItemFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/NewItemFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/NotificationsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/NotificationsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/NotificationsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/NotificationsFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/NotificationsSettingsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/NotificationsSettingsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/NotificationsSettingsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/NotificationsSettingsFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/PeopleNearbyFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/PeopleNearbyFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/PhotoViewActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/PhotoViewActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/PopularActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/PopularActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/PopularFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/PopularFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/PrivacySettingsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/PrivacySettingsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/PrivacySettingsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/PrivacySettingsFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/ProfileActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/ProfileActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/ProfileFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/ProfileFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/RecentlyDeletedActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/RecentlyDeletedActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/RecentlyDeletedFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/RecentlyDeletedFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/RecoveryActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/RecoveryActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/RecoveryFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/RecoveryFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/ReferralsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/ReferralsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/ReferralsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/ReferralsFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/RegisterActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/RegisterActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/SearchActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/SearchActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/SearchFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/SearchFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/SeetingsActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/SelectFeelingActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/SelectFeelingActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/SentSuccessfullyActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/SentSuccessfullyActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/ServicesActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/ServicesActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/ServicesFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/ServicesFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/SettingsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/SettingsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/SettingsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/SettingsFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/SignupActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/SignupActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/SignupFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/SignupFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/SplashActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/SplashActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/StreamActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/StreamActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/StreamFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/StreamFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/SupportActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/SupportActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/SupportFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/SupportFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/UpgradesActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/UpgradesActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/UpgradesFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/UpgradesFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/VideoViewActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/VideoViewActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/ViewImageActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/ViewImageActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/ViewImageFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/ViewImageFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/ViewItemActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/ViewItemActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/ViewItemFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/ViewItemFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/ViewYouTubeVideoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/ViewYouTubeVideoActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/WebViewActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/WebViewActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/WelcomeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/WelcomeActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/adapter/AdvancedItemListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/adapter/AdvancedItemListAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/adapter/BalanceHistoryListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/adapter/BalanceHistoryListAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/adapter/BlackListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/adapter/BlackListAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/adapter/ChatListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/adapter/ChatListAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/adapter/CommentsListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/adapter/CommentsListAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/adapter/DialogsListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/adapter/DialogsListAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/adapter/FeelingsListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/adapter/FeelingsListAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/adapter/FollowersSpotlightListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/adapter/FollowersSpotlightListAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/adapter/FriendsSpotlightListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/adapter/FriendsSpotlightListAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/adapter/GalleryListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/adapter/GalleryListAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/adapter/GallerySpotlightListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/adapter/GallerySpotlightListAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/adapter/GiftsListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/adapter/GiftsListAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/adapter/GiftsSelectListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/adapter/GiftsSelectListAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/adapter/GroupsListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/adapter/GroupsListAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/adapter/GuestListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/adapter/GuestListAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/adapter/ImageIconAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/adapter/ImageIconAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/adapter/LikeListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/adapter/LikeListAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/adapter/MarketListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/adapter/MarketListAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/adapter/MediaListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/adapter/MediaListAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/adapter/MediaViewerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/adapter/MediaViewerAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/adapter/NavDrawerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/adapter/NavDrawerAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/adapter/NotificationsListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/adapter/NotificationsListAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/adapter/PeopleListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/adapter/PeopleListAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/adapter/PeopleNearbyListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/adapter/PeopleNearbyListAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/adapter/ReferralListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/adapter/ReferralListAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/adapter/SearchListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/adapter/SearchListAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/adapter/SectionsPagerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/adapter/SectionsPagerAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/adapter/StickerListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/adapter/StickerListAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/app/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/common/ActivityBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/common/ActivityBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/constants/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/constants/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/dialogs/ItemDeleteDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/dialogs/ItemDeleteDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/dialogs/PostImageChooseDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/dialogs/PostImageChooseDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/dialogs/SearchSettingsDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/dialogs/SearchSettingsDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/model/BalanceItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/model/BalanceItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/model/BaseGift.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/model/BaseGift.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/model/BlacklistItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/model/BlacklistItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/model/Chat.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/model/Chat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/model/ChatItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/model/ChatItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/model/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/model/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/model/Feeling.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/model/Feeling.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/model/GalleryItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/model/GalleryItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/model/Gift.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/model/Gift.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/model/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/model/Group.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/model/Guest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/model/Guest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/model/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/model/Image.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/model/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/model/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/model/MarketItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/model/MarketItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/model/MediaItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/model/MediaItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/model/NavDrawerItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/model/NavDrawerItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/model/Notify.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/model/Notify.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/model/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/model/Profile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/model/Sticker.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/model/Sticker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/model/Video.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/model/Video.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/service/MyFcmListenerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/service/MyFcmListenerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/util/Api.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/util/Api.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/util/BlacklistItemInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/util/BlacklistItemInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/util/CustomRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/util/CustomRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/util/DoubleClickListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/util/DoubleClickListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/util/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/util/Helper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/util/LruBitmapCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/util/LruBitmapCache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/util/TagClick.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/util/TagClick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/util/TagSelectingTextview.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/util/TagSelectingTextview.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/view/LineItemDecoration.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/view/LineItemDecoration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/view/ResizableImageView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/view/ResizableImageView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/view/RoundedImageView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/view/RoundedImageView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/view/SlidingTabLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/view/SlidingTabLayout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/view/SlidingTabStrip.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/view/SlidingTabStrip.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/view/SquareLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/view/SquareLayout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/threads/view/TouchImageView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/threads_clone/view/TouchImageView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/github/ankushsachdeva/emojicon/EmojiAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/github/ankushsachdeva/emojicon/EmojiAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/github/ankushsachdeva/emojicon/EmojiconEditText.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/github/ankushsachdeva/emojicon/EmojiconEditText.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/github/ankushsachdeva/emojicon/EmojiconGridView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/github/ankushsachdeva/emojicon/EmojiconGridView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/github/ankushsachdeva/emojicon/EmojiconHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/github/ankushsachdeva/emojicon/EmojiconHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/github/ankushsachdeva/emojicon/EmojiconRecentsGridView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/github/ankushsachdeva/emojicon/EmojiconRecentsGridView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/github/ankushsachdeva/emojicon/EmojiconTextView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/github/ankushsachdeva/emojicon/EmojiconTextView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/github/ankushsachdeva/emojicon/EmojiconsPopup.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/github/ankushsachdeva/emojicon/EmojiconsPopup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_account_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_account_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_balance.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_balance.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_black_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_black_list.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_change_password.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_change_password.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_chat.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_chat.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_deactivate.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_deactivate.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_dialogs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_dialogs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_favorites.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_favorites.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_gallery.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_gallery.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_gifts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_gifts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_group.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_group.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_group_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_group_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_hashtags.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_hashtags.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_likers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_likers.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_location.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_location.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_managed_groups.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_managed_groups.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_new_group.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_new_group.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_new_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_new_item.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_notifications_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_notifications_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_photo_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_photo_view.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_profile.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_recovery.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_recovery.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_seetings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_seetings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_services.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_services.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_signup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_signup.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_support.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_support.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_video_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_video_view.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_web_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_web_view.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/ad_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/ad_item.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/chat_left_item_list_row.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/chat_left_item_list_row.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_account_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_account_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_black_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_black_list.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_change_password.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_change_password.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_deactivate.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_deactivate.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_group_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_group_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_guests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_guests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_location.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_location.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_new_group.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_new_group.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_people_nearby.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_people_nearby.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_recovery.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_recovery.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_services.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_services.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_signup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_signup.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_support.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_support.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_view_image.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_view_image.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/gallery_thumbnail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/gallery_thumbnail.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_account_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_account_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_black_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_black_list.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_chat.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_chat.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_dialogs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_dialogs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_feeds.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_feeds.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_followers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_followers.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_followings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_followings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_groups.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_groups.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_hashtags.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_hashtags.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_managed_groups.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_managed_groups.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_nearby.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_nearby.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_new_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_new_item.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_notifications_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_notifications_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_photo_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_photo_view.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_recovery.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_recovery.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_report.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_report.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_services.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_services.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_signup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_signup.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_support.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_support.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_web_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_web_view.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/app_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/app_logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -354,29 +114,31 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;BundleExportedModule&quot;: &quot;threads-clone-android.app&quot;,
-    &quot;ExportBundle.BundlePathForthreads-clone-android.app&quot;: &quot;/Users/pulkitsharma/Documents/threads-clone-android/app&quot;,
-    &quot;ResourceManagerPrefKey.ResourceType&quot;: &quot;LAYOUT&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;android-custom-view/Users/pulkitsharma/Documents/threads-clone-android/app/src/main/java/github/ankushsachdeva/emojicon/EmojiconEditText.java_SELECTED&quot;: &quot;EmojiconEditText&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/pulkitsharma/Documents/threads-clone-android/app&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "BundleExportedModule": "threads-clone-android.app",
+    "ExportBundle.BundlePathForthreads-clone-android.app": "/Users/pulkitsharma/Documents/threads-clone-android/app",
+    "ResourceManagerPrefKey.ResourceType": "DRAWABLE",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "android-custom-view/Users/pulkitsharma/Documents/threads-clone-android/app/src/main/java/github/ankushsachdeva/emojicon/EmojiconEditText.java_SELECTED": "EmojiconEditText",
+    "cidr.known.project.marker": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "last_directory_selection": "/Users/pulkitsharma/Documents/threads-clone-android/app/src/main/res/drawable",
+    "last_opened_file_path": "/Users/pulkitsharma/Documents/threads-clone-android/app/src/main/res/drawable",
+    "show.migrate.to.gradle.popup": "false"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;ExportApk.BuildVariants&quot;: [
-      &quot;release&quot;
+  "keyToStringList": {
+    "ExportApk.BuildVariants": [
+      "release"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/app/src/main/res/font" />
       <recent name="$PROJECT_DIR$/app/src/main/res/raw" />
       <recent name="$PROJECT_DIR$/app/src/main/res" />
